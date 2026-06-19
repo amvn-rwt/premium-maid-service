@@ -1,0 +1,35 @@
+---
+description: Client decisions — use confirmed values, placeholders for pending items
+alwaysApply: true
+---
+
+# Open client decisions
+
+Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
+
+## Confirmed
+
+| Item | Value |
+|------|-------|
+| Service area | Delhi NCR |
+| Languages | Bilingual — English + Hindi |
+| Phone 1 | +91 7428127908 |
+| Phone 2 | +91 9871439287 |
+
+## Still pending — use placeholders, do not invent
+
+- D2: Business model (agency vs direct employer)
+- D3: Pricing on site (rates vs enquiry-only)
+- D5: Lead routing (email, WhatsApp, sheet, CRM)
+- D6: Domain and hosting
+- D7: Brand assets (logo, colors, photos)
+- D8: Verification claims — **only if client confirms**
+- D9: Replacement / trial policy
+- D10: Legal pages wording
+
+## Rules
+
+- Never fabricate testimonials, placement counts, years in business, or verification claims.
+- Do not claim "police verified" until D8 is confirmed.
+- WhatsApp vs call for each number is unconfirmed — support both numbers in footer; ask before picking a single primary for sticky bar.
+- Hero Option C in brief still says `[City]` — use **Delhi NCR** where city is needed.
