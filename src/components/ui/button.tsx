@@ -19,6 +19,10 @@ const buttonVariants = cva(
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
         accent: "bg-accent text-accent-foreground hover:bg-accent/90",
+        pill:
+          "overflow-visible rounded-full bg-background text-primary ring-1 ring-border/60 hover:bg-background hover:text-primary hover:ring-border/70 aria-expanded:bg-background aria-expanded:text-primary aria-expanded:ring-border/70",
+        pillAccent:
+          "overflow-visible rounded-full bg-accent text-accent-foreground hover:bg-accent/90",
       },
       size: {
         default:

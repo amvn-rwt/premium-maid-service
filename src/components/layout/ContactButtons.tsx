@@ -14,11 +14,8 @@ export function ContactButtons({
   iconOnly = false,
 }: ContactButtonsProps) {
   return (
-    <div className={cn("flex items-center gap-1.5", className)}>
-      <CallDropdown
-        iconOnly={iconOnly}
-        className={iconOnly ? undefined : "min-w-0 flex-1 sm:flex-none"}
-      />
+    <div className={cn("flex shrink-0 items-center gap-1.5", className)}>
+      <CallDropdown iconOnly={iconOnly} className="shrink-0" />
       <a
         href={getPrimaryWhatsAppHref()}
         target="_blank"
@@ -26,16 +23,13 @@ export function ContactButtons({
         aria-label="Chat on WhatsApp"
         className={cn(
           buttonVariants({
-            variant: "accent",
+            variant: "pillAccent",
             size: iconOnly ? "icon-lg" : "lg",
           }),
-          iconOnly ? undefined : "min-w-0 flex-1 sm:flex-none",
+          "shrink-0",
         )}
       >
-        <WhatsAppIcon
-          className={cn("shrink-0", iconOnly ? "size-4" : "size-3.5")}
-          aria-hidden
-        />
+        <WhatsAppIcon className="size-4 shrink-0" aria-hidden />
         {!iconOnly ? <span className="hidden sm:inline">WhatsApp</span> : null}
       </a>
     </div>

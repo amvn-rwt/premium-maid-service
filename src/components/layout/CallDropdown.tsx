@@ -29,14 +29,14 @@ export function CallDropdown({
         aria-label="Choose a number to call"
         className={cn(
           buttonVariants({
-            variant: "outline",
+            variant: "pill",
             size: iconOnly ? "icon-lg" : "lg",
           }),
           "cursor-pointer",
           className,
         )}
       >
-        <CallIcon className="size-4 shrink-0" aria-hidden />
+        <CallIcon className="size-3.5 shrink-0" aria-hidden />
         {!iconOnly ? (
           <>
             Call
