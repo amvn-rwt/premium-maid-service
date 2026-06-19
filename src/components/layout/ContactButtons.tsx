@@ -6,23 +6,37 @@ import { cn } from "@/lib/utils";
 
 type ContactButtonsProps = {
   className?: string;
+  iconOnly?: boolean;
 };
 
-export function ContactButtons({ className = "" }: ContactButtonsProps) {
+export function ContactButtons({
+  className = "",
+  iconOnly = false,
+}: ContactButtonsProps) {
   return (
-    <div className={cn("flex items-center gap-2", className)}>
-      <CallDropdown className="min-w-0 flex-1 sm:flex-none" />
+    <div className={cn("flex items-center gap-1.5", className)}>
+      <CallDropdown
+        iconOnly={iconOnly}
+        className={iconOnly ? undefined : "min-w-0 flex-1 sm:flex-none"}
+      />
       <a
         href={getPrimaryWhatsAppHref()}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
         className={cn(
-          buttonVariants({ variant: "accent", size: "lg" }),
-          "min-w-0 flex-1 sm:flex-none",
+          buttonVariants({
+            variant: "accent",
+            size: iconOnly ? "icon-lg" : "lg",
+          }),
+          iconOnly ? undefined : "min-w-0 flex-1 sm:flex-none",
         )}
       >
-        <WhatsAppIcon className="size-3.5 shrink-0" aria-hidden />
-        <span className="hidden sm:inline">WhatsApp</span>
+        <WhatsAppIcon
+          className={cn("shrink-0", iconOnly ? "size-4" : "size-3.5")}
+          aria-hidden
+        />
+        {!iconOnly ? <span className="hidden sm:inline">WhatsApp</span> : null}
       </a>
     </div>
   );

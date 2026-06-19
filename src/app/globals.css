@@ -59,6 +59,13 @@
   --input: #e5e7e3;
   --ring: #1e3a5f;
   --radius: 0.5rem;
+
+  /* Mobile drawer — balanced enter/exit for a large surface */
+  --drawer-open-dur: 420ms;
+  --drawer-close-dur: 400ms;
+  --drawer-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --drawer-backdrop-open-dur: 380ms;
+  --drawer-backdrop-close-dur: 360ms;
 }
 
 @layer base {

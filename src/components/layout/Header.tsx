@@ -22,8 +22,9 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
-          <ContactButtons className="hidden md:flex" />
+        <div className="flex items-center gap-1.5 lg:gap-2">
+          <ContactButtons className="lg:hidden" iconOnly />
+          <ContactButtons className="hidden lg:flex" />
           <MobileNav />
         </div>
       </Container>
