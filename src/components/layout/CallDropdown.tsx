@@ -1,6 +1,6 @@
 "use client";
 
-import { CallIcon, ChevronDown } from "@/components/icons";
+import { CallIcon } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -16,33 +16,20 @@ import { cn } from "@/lib/utils";
 
 type CallDropdownProps = {
   className?: string;
-  iconOnly?: boolean;
 };
 
-export function CallDropdown({
-  className = "",
-  iconOnly = false,
-}: CallDropdownProps) {
+export function CallDropdown({ className = "" }: CallDropdownProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
         aria-label="Choose a number to call"
         className={cn(
-          buttonVariants({
-            variant: "pill",
-            size: iconOnly ? "icon-lg" : "lg",
-          }),
+          buttonVariants({ variant: "outline", size: "icon-lg" }),
           "cursor-pointer",
           className,
         )}
       >
-        <CallIcon className="size-3.5 shrink-0" aria-hidden />
-        {!iconOnly ? (
-          <>
-            Call
-            <ChevronDown className="size-3.5 opacity-70" aria-hidden />
-          </>
-        ) : null}
+        <CallIcon className="size-4 shrink-0" aria-hidden />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-52">
         <DropdownMenuGroup>
