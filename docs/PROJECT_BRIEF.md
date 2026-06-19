@@ -14,6 +14,9 @@
 | **Target audience** | Households and families looking for verified domestic help |
 | **Primary goal** | Convert visitors into enquiries (form submit, call, or WhatsApp) |
 | **Scope (v1)** | Marketing site + booking/enquiry form — no login, payments, or maid database |
+| **Service area** | Delhi NCR (confirmed) |
+| **Languages** | Bilingual — English + Hindi (confirmed) |
+| **Contact numbers** | +91 74281 27908, +91 98714 39287 (confirmed) |
 
 ### Services to feature
 
@@ -31,10 +34,10 @@ These must be confirmed on the discovery call before build starts.
 
 | # | Decision | Options | Status |
 |---|----------|---------|--------|
-| D1 | **Service area** | Single city, metro region (e.g. Delhi NCR), or pan-India | ⬜ Pending |
+| D1 | **Service area** | Single city, metro region (e.g. Delhi NCR), or pan-India | ✅ **Delhi NCR** |
 | D2 | **Business model** | Placement agency vs. direct employer vs. aggregator | ⬜ Pending |
 | D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ⬜ Pending |
-| D4 | **Languages** | Hindi only, English only, or bilingual (Hindi + English) | ⬜ Pending |
+| D4 | **Languages** | Hindi only, English only, or bilingual (Hindi + English) | ✅ **Bilingual (English + Hindi)** |
 | D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ⬜ Pending |
 | D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ⬜ Pending |
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ⬜ Pending |
@@ -314,7 +317,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 | Hosting | Vercel or Netlify | Free tier, custom domain |
 | Analytics | Google Analytics or Plausible | Track enquiries and traffic |
 | SEO | Meta tags, Open Graph, local business schema | Local search visibility |
-| Language | i18n only if client confirms Hindi | Adds scope — defer unless required |
+| Language | Bilingual EN + HI (i18n) | Confirmed by client — plan for Hindi copy + Noto Sans Devanagari |
 
 ### Out of scope for v1
 
@@ -332,10 +335,10 @@ Avoid dark themes — they conflict with “clean home services” perception.
 - [ ] Business legal name and tagline  
 - [ ] Logo (SVG or PNG)  
 - [ ] Brand colors (or approval of draft palette)  
-- [ ] Phone and WhatsApp numbers  
+- [x] Phone numbers — **7428127908**, **9871439287** (WhatsApp same or separate — confirm on next call)  
 - [ ] Email for enquiries  
 - [ ] Office address and hours  
-- [ ] Service area list  
+- [x] Service area — **Delhi NCR**  
 - [ ] Per-service descriptions (or approve our drafts)  
 - [ ] Agency fee / pricing policy (if shown)  
 - [ ] Verification and replacement policies (wording)  
@@ -348,7 +351,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 
 ## 9. SEO & local discovery (basics)
 
-- **Title:** `Premium Maid Service | Maids, Cooks, Babysitters & Japa Maids in [City]`  
+- **Title:** `Premium Maid Service | Maids, Cooks, Babysitters & Japa Maids in Delhi NCR`  
 - **Meta description:** 150–160 chars with services + city + CTA  
 - **H1:** One per page; include primary keyword naturally  
 - **LocalBusiness schema** (JSON-LD): name, phone, area served, hours  
@@ -409,6 +412,17 @@ Avoid dark themes — they conflict with “clean home services” perception.
 - Discovery call planned — use Section 3 questions  
 - Workspace initialized; implementation not started  
 
+### Client answers (WhatsApp — 19 Jun 2026, Ankush Rustagi)
+
+| Item | Answer |
+|------|--------|
+| **Languages** | Both — English and Hindi |
+| **Service area** | Delhi NCR |
+| **Phone 1** | 7428127908 |
+| **Phone 2** | 9871439287 |
+
+Still to confirm: whether both numbers are for call + WhatsApp, which is primary in the header/footer, and email for form routing.
+
 ---
 
 ## Document history
@@ -416,3 +430,4 @@ Avoid dark themes — they conflict with “clean home services” perception.
 | Date | Change |
 |------|--------|
 | 2026-06-19 | Initial project brief created |
+| 2026-06-19 | Client confirmed Delhi NCR, bilingual EN/HI, two phone numbers |
