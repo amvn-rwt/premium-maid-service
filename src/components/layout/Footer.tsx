@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PhoneIcon, WhatsAppIcon } from "@/components/icons";
+import { WhatsAppIcon } from "@/components/icons";
 import { Container } from "@/components/ui/Container";
 import { SiteLogo } from "@/components/layout/SiteLogo";
 import { telHref, whatsappHref } from "@/lib/contact";
@@ -15,9 +15,9 @@ export function Footer() {
       <Container className="py-12 sm:py-14">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="space-y-4">
-            <SiteLogo onDark />
+            <SiteLogo inverted />
             <p className="max-w-sm text-sm leading-relaxed text-primary-foreground/80">
-              {footer.tagline}
+              {siteConfig.description}
             </p>
           </div>
 
@@ -61,9 +61,8 @@ export function Footer() {
                   <div className="flex flex-wrap items-center gap-3">
                     <a
                       href={telHref(phone.tel)}
-                      className="inline-flex items-center gap-2 text-sm text-primary-foreground/90 transition-colors hover:text-primary-foreground"
+                      className="text-sm text-primary-foreground/90 transition-colors hover:text-primary-foreground"
                     >
-                      <PhoneIcon className="size-3.5" />
                       {phone.display}
                     </a>
                     <a

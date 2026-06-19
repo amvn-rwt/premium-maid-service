@@ -13,13 +13,13 @@ export const siteConfig = {
   },
   phones: [
     {
-      label: "Phone 1",
+      label: "Primary",
       display: "+91 74281 27908",
       tel: "+917428127908",
       whatsapp: "917428127908",
     },
     {
-      label: "Phone 2",
+      label: "Secondary",
       display: "+91 98714 39287",
       tel: "+919871439287",
       whatsapp: "919871439287",
@@ -36,7 +36,6 @@ export const siteConfig = {
     { label: "Book Now", href: "#enquire" },
   ],
   footer: {
-    tagline: "Trusted domestic help for Delhi NCR homes",
     links: [
       { label: "Services", href: "#services" },
       { label: "How It Works", href: "#how-it-works" },

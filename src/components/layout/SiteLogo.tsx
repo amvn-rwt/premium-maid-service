@@ -3,28 +3,23 @@ import { siteConfig } from "@/lib/site";
 
 type SiteLogoProps = {
   className?: string;
-  onDark?: boolean;
+  /** Light logo for navy (primary) backgrounds — e.g. footer. */
+  inverted?: boolean;
 };
 
-export function SiteLogo({ className = "", onDark = false }: SiteLogoProps) {
+export function SiteLogo({ className = "", inverted = false }: SiteLogoProps) {
+  const premiumClass = inverted ? "text-primary-foreground" : "text-primary";
+  const serviceClass = inverted ? "text-accent-on-primary" : "text-accent-light";
+
   return (
     <Link
       href="#home"
-      className={`group inline-flex flex-col leading-tight ${className}`}
+      aria-label={siteConfig.name}
+      className={`group inline-block min-w-0 max-w-44 leading-snug tracking-normal transition-opacity hover:opacity-90 sm:max-w-none sm:leading-tight ${className}`}
     >
-      <span
-        className={`text-lg font-semibold tracking-tight sm:text-xl ${
-          onDark ? "text-primary-foreground" : "text-primary"
-        }`}
-      >
-        {siteConfig.name}
-      </span>
-      <span
-        className={`text-xs font-medium tracking-wide uppercase ${
-          onDark ? "text-primary-foreground/70" : "text-accent"
-        }`}
-      >
-        {siteConfig.serviceArea}
+      <span className="block text-[0.9375rem] sm:text-lg sm:whitespace-nowrap">
+        <span className={`font-semibold ${premiumClass}`}>Premium</span>{" "}
+        <span className={`font-medium ${serviceClass}`}>Maid Service</span>
       </span>
     </Link>
   );
