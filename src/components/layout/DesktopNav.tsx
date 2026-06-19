@@ -13,10 +13,7 @@ import { cn } from "@/lib/utils";
 const MOVE_MS = 280;
 const MOVE_EASE = "cubic-bezier(0.25, 1, 0.5, 1)";
 
-function nearestIndex(
-  items: (HTMLAnchorElement | null)[],
-  clientX: number,
-) {
+function nearestIndex(items: (HTMLAnchorElement | null)[], clientX: number) {
   let nearest = 0;
   let minDist = Infinity;
 
@@ -162,7 +159,7 @@ export function DesktopNav() {
   return (
     <nav
       ref={navRef}
-      className="relative hidden items-center rounded-full border border-border/70 bg-muted/45 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] lg:flex"
+      className="relative hidden items-center rounded-full border-border/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] lg:flex"
       aria-label="Main"
       onMouseEnter={onNavEnter}
       onMouseMove={onNavMove}
