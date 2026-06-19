@@ -4,11 +4,21 @@ Marketing website for a domestic help agency — maids, cooks, babysitters, and 
 
 ## Status
 
-Planning phase. See the project brief for decisions, layout, design direction, and client discovery questions.
+In development. Next.js + Tailwind scaffold is in place; sections are being built step by step.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Documentation
 
 - **[Project Brief](docs/PROJECT_BRIEF.md)** — decisions, site structure, layout wireframes, design system, client questions, launch checklist
+- **[Client Questionnaire](docs/CLIENT_QUESTIONNAIRE.md)** — discovery form for the client to fill at their own pace
 
 ## Services (planned)
 
