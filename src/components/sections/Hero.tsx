@@ -13,17 +13,8 @@ export function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="relative overflow-hidden border-b border-border/60 bg-[linear-gradient(180deg,color-mix(in_oklch,var(--background),var(--primary)_4%)_0%,var(--background)_55%)]"
+      className="relative overflow-hidden border-b border-border/60 bg-[linear-gradient(165deg,color-mix(in_oklch,var(--primary)_9%,var(--background))_0%,color-mix(in_oklch,var(--accent)_6%,var(--background))_42%,var(--background)_100%)]"
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-accent/10 blur-3xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-0 left-0 h-56 w-56 rounded-full bg-primary/5 blur-3xl"
-      />
-
       <Container className="relative py-12 sm:py-14 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 lg:py-16 xl:gap-16">
         <div className="max-w-xl lg:max-w-none">
           <h1
@@ -65,7 +56,7 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="mt-10 overflow-visible lg:mt-0">
+        <div className="relative mt-10 overflow-visible lg:mt-0">
           <HeroImageCollage />
         </div>
       </Container>

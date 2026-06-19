@@ -49,7 +49,7 @@ function CollageSlot({
       onBlur={onDeactivate}
       onClick={() => onActivate(id)}
       className={cn(
-        "absolute aspect-[4/3] cursor-pointer overflow-hidden rounded-2xl bg-muted shadow-md ring-1 ring-border/50",
+        "absolute aspect-4/3 cursor-pointer overflow-hidden rounded-2xl bg-muted shadow-md ring-1 ring-border/50",
         "focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50",
         "motion-safe:transition-[transform,box-shadow,ring-color] motion-reduce:transition-none",
         "motion-safe:will-change-transform",
@@ -86,7 +86,7 @@ export function HeroImageCollage() {
   const isTop = (id: CollageSlotId) => activeId === id;
 
   return (
-    <div className="relative mx-auto aspect-[5/5.4] w-full max-w-md overflow-visible sm:max-w-lg lg:max-w-none lg:aspect-[1/1.02]">
+    <div className="relative z-10 mx-auto aspect-[5/5.4] w-full max-w-md overflow-visible sm:max-w-lg lg:max-w-none lg:aspect-[1/1.02]">
       <CollageSlot
         id="back"
         image={back}
