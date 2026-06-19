@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Noto_Sans_Devanagari } from "next/font/google";
+import { Footer } from "@/components/layout/Footer";
+import { Header } from "@/components/layout/Header";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -31,7 +33,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${notoDevanagari.variable}`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

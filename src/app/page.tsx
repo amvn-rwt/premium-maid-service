@@ -12,8 +12,7 @@ export default function HomePage() {
           {siteConfig.name}
         </h1>
         <p className="mt-4 max-w-xl text-lg text-muted">
-          Step 1 complete — project shell is ready. Next up: header and footer
-          layout.
+          Header and footer are in place. Next up: hero section.
         </p>
       </Container>
     </main>
