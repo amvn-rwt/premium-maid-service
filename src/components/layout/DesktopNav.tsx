@@ -159,7 +159,7 @@ export function DesktopNav() {
   return (
     <nav
       ref={navRef}
-      className="relative hidden items-center rounded-full border-border/70 p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] lg:flex"
+      className="relative hidden items-center rounded-full p-1 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] lg:flex"
       aria-label="Main"
       onMouseEnter={onNavEnter}
       onMouseMove={onNavMove}
@@ -169,7 +169,7 @@ export function DesktopNav() {
       <span
         aria-hidden
         className={cn(
-          "pointer-events-none absolute top-1 bottom-1 left-0 rounded-full bg-background shadow-sm ring-1 ring-border/60",
+          "pointer-events-none absolute top-1 bottom-1 left-0 rounded-full bg-background shadow-md ring-1 ring-border/70",
           "motion-safe:transition-[transform,width,opacity] motion-reduce:transition-none",
           isHovering ? "opacity-100" : "opacity-0",
         )}
