@@ -28,10 +28,13 @@ export function MobileNav() {
   const [mounted, setMounted] = useState(false);
   const [portalReady, setPortalReady] = useState(false);
   const pendingOpenRef = useRef(false);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const panelCloseRef = useRef<HTMLButtonElement>(null);
   const panelId = useId();
 
   const close = useCallback(() => {
     pendingOpenRef.current = false;
+    triggerRef.current?.focus();
     setOpen(false);
   }, []);
 
@@ -99,6 +102,8 @@ export function MobileNav() {
   useEffect(() => {
     if (!open) return;
 
+    panelCloseRef.current?.focus();
+
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") close();
     };
@@ -123,7 +128,7 @@ export function MobileNav() {
     showDrawer && portalReady ? (
       <div
         className={cn("fixed inset-0 z-50 lg:hidden", !open && "pointer-events-none")}
-        aria-hidden={!open}
+        {...(!open ? { inert: true } : {})}
       >
         <button
           type="button"
@@ -136,7 +141,7 @@ export function MobileNav() {
             transitionTimingFunction: DRAWER_EASE,
           }}
           aria-label="Close menu"
-          tabIndex={open ? 0 : -1}
+          tabIndex={-1}
           onClick={close}
         />
 
@@ -157,6 +162,7 @@ export function MobileNav() {
           <div className="flex items-center justify-between border-b border-border px-4 py-4">
             <span className="text-sm font-semibold text-primary">Menu</span>
             <Button
+              ref={panelCloseRef}
               type="button"
               variant="ghost"
               size="icon-sm"
@@ -197,11 +203,13 @@ export function MobileNav() {
   return (
     <div className="lg:hidden">
       <Button
+        ref={triggerRef}
         type="button"
         variant="outline"
         size="icon-lg"
         aria-expanded={open}
         aria-controls={panelId}
+        aria-haspopup="dialog"
         aria-label={open ? "Close menu" : "Open menu"}
         onClick={toggleMenu}
       >
