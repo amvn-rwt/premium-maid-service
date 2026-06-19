@@ -20,7 +20,7 @@ export function MobileNav() {
     <div className="lg:hidden">
       <button
         type="button"
-        className="inline-flex items-center justify-center rounded-lg border border-border bg-background p-2.5 text-primary transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+        className="inline-flex items-center justify-center rounded-xl border border-border bg-background p-2.5 text-primary transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={open ? "Close menu" : "Open menu"}
@@ -46,7 +46,7 @@ export function MobileNav() {
               <span className="text-sm font-semibold text-primary">Menu</span>
               <button
                 type="button"
-                className="rounded-lg p-2 text-primary hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                className="rounded-xl p-2 text-primary hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
               >
