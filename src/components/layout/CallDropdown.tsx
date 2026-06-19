@@ -23,7 +23,11 @@ export function CallDropdown({ className = "" }: CallDropdownProps) {
     <DropdownMenu>
       <DropdownMenuTrigger
         aria-label="Choose a number to call"
-        className={cn(buttonVariants({ variant: "outline", size: "lg" }), className)}
+        className={cn(
+          buttonVariants({ variant: "outline", size: "lg" }),
+          "cursor-pointer",
+          className,
+        )}
       >
         Call
         <ChevronDown className="size-3.5 opacity-70" aria-hidden />
