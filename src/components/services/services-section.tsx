@@ -36,7 +36,7 @@ export function ServicesSection() {
             </h2>
           </header>
 
-          <p className="max-w-sm text-sm leading-relaxed text-muted-foreground text-pretty lg:text-right lg:text-[0.95rem]">
+          <p className="max-w-sm text-sm leading-snug text-muted-foreground text-pretty lg:text-right lg:text-[0.95rem]">
             {description}
           </p>
         </div>

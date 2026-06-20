@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 
+import { HighlightLabel } from "@/components/ui/highlight-label";
 import {
   getEnquiryServiceContent,
   type EnquiryServiceContent,
@@ -24,7 +25,7 @@ function EnquiryVisualPanelContent({
   return (
     <div
       className={cn(
-        "relative aspect-4/5 w-full overflow-hidden",
+        "relative aspect-4/5 w-full overflow-hidden lg:aspect-[3/2]",
         isFeatured && "ring-1 ring-inset ring-primary/35",
       )}
     >
@@ -52,9 +53,7 @@ function EnquiryVisualPanelContent({
       ) : null}
 
       <div className="absolute inset-x-0 bottom-0 p-4 sm:p-5">
-        <p className="text-xs font-medium tracking-wide text-background/65 uppercase">
-          Enquiring about
-        </p>
+        <HighlightLabel>Enquiring about</HighlightLabel>
         <h3 className="mt-1 text-2xl font-semibold tracking-tight text-background sm:text-[1.65rem]">
           {content.name}
         </h3>

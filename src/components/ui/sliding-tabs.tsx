@@ -126,7 +126,7 @@ function SlidingTabs<T extends string>({
               onClick={() => onChange(item.value)}
               onKeyDown={(event) => handleKeyDown(event, index)}
               className={cn(
-                "relative shrink-0 pb-3 text-sm font-medium whitespace-nowrap transition-colors duration-200 outline-none",
+                "relative shrink-0 cursor-pointer pb-3 text-sm font-medium whitespace-nowrap transition-colors duration-200 outline-none",
                 "focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
                 isActive
                   ? "text-primary"

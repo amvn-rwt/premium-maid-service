@@ -4,6 +4,7 @@ import { useCallback, useEffect, useId, useState } from "react";
 
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { Button } from "@/components/ui/button";
+import { HighlightLabel } from "@/components/ui/highlight-label";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { PillCtaButton } from "@/components/ui/pill-cta-button";
@@ -111,11 +112,9 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
   const showExpectedDate = values.service === "japa";
 
   return (
-    <div className="flex h-full flex-col overflow-hidden rounded-[1.35rem] ring-1 ring-foreground/10 bg-background">
+    <div className="flex flex-col overflow-hidden rounded-[1.35rem] ring-1 ring-foreground/10 bg-background">
       <div className="p-4 sm:p-5">
-        <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
-          Your enquiry
-        </p>
+        <HighlightLabel>Your enquiry</HighlightLabel>
         <h3 className="mt-1 text-lg font-semibold tracking-tight text-foreground sm:text-xl">
           Share your requirements
         </h3>
@@ -135,7 +134,7 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
         id={formId}
         onSubmit={handleSubmit}
         noValidate
-        className="flex flex-1 flex-col gap-4 px-4 pb-4 sm:px-5 sm:pb-5"
+        className="flex flex-col gap-4 px-4 pb-4 sm:px-5 sm:pb-5"
       >
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-2 sm:col-span-2">
@@ -295,12 +294,13 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
               value={values.message}
               onChange={(event) => updateField("message", event.target.value)}
               placeholder="Timing, language preference, or anything else we should know"
-              rows={4}
+              rows={3}
+              className="min-h-20"
             />
           </div>
         </div>
 
-        <div className="mt-auto space-y-3 pt-1">
+        <div className="space-y-3 pt-1">
           <div className="flex flex-wrap items-center gap-3">
             <PillCtaButton type="submit" className="shrink-0">
               {enquirySectionContent.submitLabel}

@@ -57,20 +57,23 @@ export function EnquirySection() {
       className="scroll-mt-20 border-t border-border/60 bg-muted/35"
     >
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-        <header className="max-w-2xl">
-          <h2
-            id="enquire-heading"
-            className="text-3xl leading-[1.08] tracking-tight text-balance sm:text-4xl"
-          >
-            <span className="block font-bold text-foreground">{title}</span>
-            <span className="mt-1 block font-normal text-muted-foreground">
-              {titleAccent}
-            </span>
-          </h2>
-          <p className="mt-4 text-sm leading-relaxed text-muted-foreground text-pretty sm:text-[0.95rem]">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <header className="max-w-xl">
+            <h2
+              id="enquire-heading"
+              className="text-3xl leading-[1.08] tracking-tight text-balance sm:text-4xl"
+            >
+              <span className="block font-bold text-foreground">{title}</span>
+              <span className="mt-1 block font-normal text-muted-foreground">
+                {titleAccent}
+              </span>
+            </h2>
+          </header>
+
+          <p className="max-w-sm text-sm leading-snug text-muted-foreground text-pretty lg:text-right lg:text-[0.95rem]">
             {description}
           </p>
-        </header>
+        </div>
 
         <div className="mt-10 grid items-start gap-4 sm:gap-5 lg:grid-cols-2">
           <EnquiryVisualPanel serviceId={serviceId} className="lg:sticky lg:top-24" />
