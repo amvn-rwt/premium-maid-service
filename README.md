@@ -9,9 +9,12 @@ Lead-generation marketing site for a Delhi NCR domestic-help agency.
 
 ## Fonts
 
-- **Fraunces** — display / headings
-- **Plus Jakarta Sans** — body / UI
-- **Noto Sans Devanagari** — Hindi
+- **Plus Jakarta Sans** — body, UI, and headings (bold)
+- Cursive accent font for highlighted words — planned, not added yet
+
+## Color
+
+- **Primary** — warm coral `#E0654D` (single brand color)
 
 ## Docs
 

@@ -1,19 +1,11 @@
 @import "tailwindcss";
 
-@theme {
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
-  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-hindi: var(--font-noto-devanagari), var(--font-plus-jakarta), ui-sans-serif,
-    system-ui, sans-serif;
-}
-
 @theme inline {
+  --font-sans: var(--font-plus-jakarta);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
@@ -25,16 +17,14 @@
 }
 
 :root {
-  --background: #f8f6f2;
-  --foreground: #1c1917;
-  --primary: #1b3a4b;
-  --primary-foreground: #f8f6f2;
-  --accent: #3d6b4f;
-  --accent-foreground: #f8f6f2;
-  --muted: #ece8e1;
-  --muted-foreground: #6b6560;
-  --border: #ddd6cc;
-  --ring: #1b3a4b;
+  --background: #f9faf8;
+  --foreground: #1a211f;
+  --primary: #e0654d;
+  --primary-foreground: #fffaf8;
+  --muted: #eef2f0;
+  --muted-foreground: #5c6b66;
+  --border: #d8e0dc;
+  --ring: #e0654d;
   --radius: 0.625rem;
 }
 
@@ -47,14 +37,10 @@
     @apply bg-background font-sans text-foreground antialiased;
   }
 
-  :lang(hi) {
-    font-family: var(--font-hindi);
-  }
-
   h1,
   h2,
   h3,
   h4 {
-    font-family: var(--font-display);
+    @apply font-bold;
   }
 }
