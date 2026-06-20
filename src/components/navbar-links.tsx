@@ -44,13 +44,13 @@ export function NavbarLinks() {
       <span
         aria-hidden
         className={cn(
-          "pointer-events-none absolute top-1/2 h-8 -translate-y-1/2 rounded-full bg-primary",
-          "motion-safe:transition-[transform,width,opacity] motion-safe:duration-200 motion-safe:ease-[cubic-bezier(0.25,1,0.5,1)]",
+          "pointer-events-none absolute top-1/2 left-0 h-8 -translate-y-1/2 rounded-full bg-primary",
+          "motion-safe:transition-[left,width,opacity] motion-safe:duration-200 motion-safe:ease-[cubic-bezier(0.25,1,0.5,1)]",
           pill ? "opacity-100" : "opacity-0",
         )}
         style={{
           width: pill?.width ?? 0,
-          transform: `translateX(${pill?.left ?? 0}px)`,
+          left: pill?.left ?? 0,
         }}
       />
 
