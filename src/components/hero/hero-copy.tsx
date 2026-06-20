@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 
 export function HeroCopy() {
   return (
-    <div className="relative max-w-xl">
+    <div className="relative w-full max-w-2xl text-center lg:text-left">
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-10 -left-6 size-32 rounded-full bg-primary/10 blur-3xl sm:-left-10 sm:size-40"
+        className="pointer-events-none absolute -top-10 left-1/2 size-32 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl sm:size-40 lg:-left-10 lg:translate-x-0"
       />
 
       <div className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-background/80 py-1.5 pr-3.5 pl-2 text-sm text-muted-foreground shadow-sm backdrop-blur-sm">
@@ -19,26 +19,23 @@ export function HeroCopy() {
         Serving {heroContent.location}
       </div>
 
-      <h1 className="mt-7 text-[2.65rem] leading-[0.98] font-bold tracking-tight sm:text-5xl lg:mt-8 lg:text-[3.5rem]">
-        <span className="block text-foreground">
-          {heroContent.headline.lead}
+      <h1 className="mx-auto mt-7 max-w-2xl text-[2.65rem] leading-[1.02] font-bold tracking-tight text-balance sm:text-5xl lg:mx-0 lg:mt-8 lg:max-w-none lg:text-[3.5rem]">
+        <span className="text-foreground">
+          {heroContent.headline.lead} {heroContent.headline.line2}{" "}
         </span>
-        <span className="mt-1 block text-foreground">
-          {heroContent.headline.line2}{" "}
-          <span className="relative inline-block text-primary">
-            <span className="relative z-10">
-              {heroContent.headline.highlight}
-            </span>
-            <span
-              aria-hidden
-              className="absolute -bottom-0.5 left-0 z-0 h-[0.42em] w-full -skew-x-3 rounded-sm bg-primary/20"
-            />
+        <span className="relative inline-block text-primary">
+          <span className="relative z-10">
+            {heroContent.headline.highlight}
           </span>
-          <span className="text-foreground">.</span>
+          <span
+            aria-hidden
+            className="absolute -bottom-0.5 left-0 z-0 h-[0.42em] w-full -skew-x-3 rounded-sm bg-primary/20"
+          />
         </span>
+        <span className="text-foreground">.</span>
       </h1>
 
-      <ul className="mt-6 flex flex-wrap gap-2">
+      <ul className="mt-6 flex flex-wrap justify-center gap-2 lg:justify-start">
         {heroContent.services.map((service) => (
           <li
             key={service}
@@ -53,11 +50,11 @@ export function HeroCopy() {
         ))}
       </ul>
 
-      <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground text-pretty sm:text-[1.05rem]">
+      <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-muted-foreground text-pretty sm:text-[1.05rem] lg:mx-0">
         {heroContent.supporting}
       </p>
 
-      <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+      <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:items-start lg:justify-start">
         <PillCtaButton>{heroContent.cta}</PillCtaButton>
         <Button
           asChild

@@ -38,7 +38,7 @@ export function NavbarLinks() {
   return (
     <ul
       ref={listRef}
-      className="relative hidden items-center md:flex"
+      className="relative hidden items-center lg:flex"
       onMouseLeave={hidePill}
     >
       <span
