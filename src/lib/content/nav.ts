@@ -14,8 +14,3 @@ export const navLinks = [
   { label: "Why Us", href: sectionAnchors.whyUs },
   { label: "Reviews", href: sectionAnchors.reviews },
 ] as const;
-
-export const mobileNavLinks = [
-  ...navLinks,
-  { label: "Enquire", href: sectionAnchors.enquire },
-] as const;

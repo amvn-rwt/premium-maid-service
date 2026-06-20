@@ -4,7 +4,7 @@ import { heroContent } from "@/lib/content/hero";
 
 export function NavbarActions() {
   return (
-    <div className="flex shrink-0 items-center gap-1.5">
+    <div className="hidden shrink-0 items-center gap-1.5 lg:flex">
       <WhatsAppButton />
       <PillCtaButton href={heroContent.ctaHref} size="sm">
         {heroContent.cta}
