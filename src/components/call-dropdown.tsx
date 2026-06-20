@@ -1,6 +1,6 @@
 "use client";
 
-import { PhoneCall } from "lucide-react";
+import { Smartphone } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -25,22 +25,26 @@ export function CallDropdown({ className }: CallDropdownProps) {
       <DropdownMenuTrigger
         aria-label="Choose a number to call"
         className={cn(
-          buttonVariants({ variant: "outline", size: "icon-lg" }),
-          "border-border/70 hover:border-primary/25 hover:bg-primary/5",
+          buttonVariants({ size: "icon-lg" }),
+          "border-transparent bg-foreground text-primary-foreground hover:bg-foreground/90",
           className,
         )}
       >
-        <PhoneCall className="size-4 shrink-0" aria-hidden />
+        <Smartphone className="size-4 shrink-0" aria-hidden strokeWidth={2} />
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" sideOffset={8} className="min-w-56">
+      <DropdownMenuContent
+        align="end"
+        sideOffset={8}
+        className="min-w-56 border-white/10 bg-foreground p-2 text-background shadow-xl ring-white/10"
+      >
         <DropdownMenuGroup>
-          <DropdownMenuLabel className="px-2.5 py-1 text-xs font-medium text-muted-foreground">
+          <DropdownMenuLabel className="px-2.5 py-1 text-xs font-medium text-background/55">
             Select a number
           </DropdownMenuLabel>
           {siteConfig.phones.map((phone) => (
             <DropdownMenuItem
               key={phone.tel}
-              className="cursor-pointer rounded-xl px-2.5 py-2.5 focus:bg-primary/10"
+              className="cursor-pointer rounded-xl px-2.5 py-2.5 focus:bg-white/10 focus:text-background"
               onSelect={() => {
                 window.location.href = telHref(phone.tel);
               }}
@@ -48,9 +52,9 @@ export function CallDropdown({ className }: CallDropdownProps) {
               <span className="flex w-full items-center gap-3">
                 <span
                   aria-hidden
-                  className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary"
+                  className="flex size-8 shrink-0 items-center justify-center rounded-full bg-background/15 text-background"
                 >
-                  <PhoneCall className="size-3.5" strokeWidth={2.25} />
+                  <Smartphone className="size-3.5 text-background" strokeWidth={2} />
                 </span>
                 <span className="flex min-w-0 flex-col gap-0.5">
                   <span
@@ -58,12 +62,12 @@ export function CallDropdown({ className }: CallDropdownProps) {
                       "text-xs font-medium",
                       phone.label === "Primary"
                         ? "text-primary"
-                        : "text-muted-foreground",
+                        : "text-background/55",
                     )}
                   >
                     {phone.label}
                   </span>
-                  <span className="font-semibold tracking-tight text-foreground">
+                  <span className="font-semibold tracking-tight text-background">
                     {phone.display}
                   </span>
                 </span>

@@ -8,7 +8,7 @@ export function NavbarActions() {
     <div className="flex shrink-0 items-center gap-1.5">
       <CallDropdown />
       <WhatsAppButton />
-      <PillCtaButton>{heroContent.cta}</PillCtaButton>
+      <PillCtaButton size="sm">{heroContent.cta}</PillCtaButton>
     </div>
   );
 }
