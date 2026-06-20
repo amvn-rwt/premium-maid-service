@@ -3,14 +3,19 @@ import { HeroMasonry } from "@/components/hero/hero-masonry";
 
 export function HeroSection() {
   return (
-    <section>
-      <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-          <div className="flex flex-col items-center lg:items-start">
+    <section className="relative">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-y-0 left-1/2 right-0 hidden bg-primary lg:block"
+      />
+
+      <div className="relative mx-auto max-w-6xl px-6 py-16 sm:py-20">
+        <div className="grid items-stretch gap-10 lg:grid-cols-2 lg:gap-12">
+          <div className="flex flex-col items-center justify-center lg:items-start">
             <HeroCopy />
           </div>
 
-          <div className="relative h-88 overflow-hidden sm:h-104 md:h-120 lg:h-112 xl:h-120">
+          <div className="relative min-h-88 overflow-hidden sm:min-h-104 md:min-h-120 lg:min-h-112 xl:min-h-120">
             <HeroMasonry />
           </div>
         </div>
