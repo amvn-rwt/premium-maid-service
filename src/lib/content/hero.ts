@@ -1,4 +1,5 @@
 import { siteConfig } from "@/lib/site";
+import { sectionAnchors } from "./nav";
 
 export const heroContent = {
   location: siteConfig.serviceArea,
@@ -11,6 +12,7 @@ export const heroContent = {
   supporting:
     "Full-time, part-time or live-in — tell us what you need and we'll find the right fit.",
   cta: "Enquire Now",
+  ctaHref: sectionAnchors.enquire,
   secondaryCta: "See Services",
-  secondaryCtaHref: "#services",
+  secondaryCtaHref: sectionAnchors.services,
 } as const;

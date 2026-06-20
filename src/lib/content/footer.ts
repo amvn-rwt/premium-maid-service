@@ -1,4 +1,5 @@
 import { heroContent } from "@/lib/content/hero";
+import { sectionAnchors } from "@/lib/content/nav";
 import { siteConfig } from "@/lib/site";
 import {
   getServiceEnquireHref,
@@ -11,7 +12,7 @@ export const footerContent = {
     supporting:
       "Share your requirements — we'll respond by call or WhatsApp.",
     primaryLabel: heroContent.cta,
-    primaryHref: "#enquire",
+    primaryHref: sectionAnchors.enquire,
     whatsappLabel: "WhatsApp Us",
   },
   linksHeading: "Quick links",
@@ -25,11 +26,12 @@ export const footerContent = {
 } as const;
 
 export const footerNavLinks = [
-  { label: "Home", href: "#" },
-  { label: "Services", href: "#services" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Home", href: sectionAnchors.home },
+  { label: "Services", href: sectionAnchors.services },
+  { label: "How It Works", href: sectionAnchors.howItWorks },
+  { label: "Why Us", href: sectionAnchors.whyUs },
+  { label: "Reviews", href: sectionAnchors.reviews },
+  { label: "Enquire", href: sectionAnchors.enquire },
 ] as const;
 
 export const footerServiceLinks = servicesContent.items.map((service) => ({

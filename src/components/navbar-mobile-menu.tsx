@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { buttonVariants } from "@/components/ui/button";
-import { navLinks } from "@/lib/content/nav";
+import { mobileNavLinks } from "@/lib/content/nav";
 import { cn } from "@/lib/utils";
 
 export function NavbarMobileMenu() {
@@ -61,7 +61,7 @@ export function NavbarMobileMenu() {
             className="fixed inset-x-0 top-16 z-50 border-b border-border bg-background px-6 py-4 shadow-lg"
           >
             <ul className="flex flex-col gap-1">
-              {navLinks.map(({ label, href }) => (
+              {mobileNavLinks.map(({ label, href }) => (
                 <li key={href}>
                   <Link
                     href={href}

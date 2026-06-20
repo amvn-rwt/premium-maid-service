@@ -12,6 +12,8 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 
+import { sectionAnchors } from "@/lib/content/nav";
+
 export type ServiceId =
   | "all-rounder"
   | "cooking"
@@ -46,7 +48,7 @@ export const servicesContent = {
   scrollHint: "Scroll sideways for more",
   footerNote: "Not sure yet?",
   footerCta: "Send a general enquiry",
-  footerCtaHref: "#enquire",
+  footerCtaHref: sectionAnchors.enquire,
   items: [
     {
       id: "all-rounder",
@@ -100,5 +102,5 @@ export const servicesContent = {
 } as const;
 
 export function getServiceEnquireHref(id: ServiceId) {
-  return `#enquire?service=${id}`;
+  return `${sectionAnchors.enquire}?service=${id}`;
 }

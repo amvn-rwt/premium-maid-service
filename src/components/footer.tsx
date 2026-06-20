@@ -101,7 +101,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="grid w-full min-w-0 grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-y-8">
+          <div className="grid w-full min-w-0 grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3 sm:gap-y-8">
             <FooterLinkColumn
               heading={linksHeading}
               links={footerNavLinks}
@@ -114,7 +114,7 @@ export function Footer() {
               aria-label="Footer services"
             />
 
-            <div>
+            <div className="col-span-2 sm:col-span-1">
               <h3 className="text-sm font-semibold text-background">
                 {contactHeading}
               </h3>

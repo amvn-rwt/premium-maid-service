@@ -9,6 +9,7 @@ import {
   enquirySectionContent,
   parseServiceIdFromHash,
 } from "@/lib/content/enquiry";
+import { sectionAnchors } from "@/lib/content/nav";
 import type { ServiceId } from "@/lib/content/services";
 
 function getInitialServiceId() {
@@ -19,8 +20,8 @@ function getInitialServiceId() {
 function updateEnquireHash(serviceId: ServiceId) {
   const nextHash =
     serviceId === defaultEnquiryServiceId
-      ? "#enquire"
-      : `#enquire?service=${serviceId}`;
+      ? sectionAnchors.enquire
+      : `${sectionAnchors.enquire}?service=${serviceId}`;
 
   if (window.location.hash !== nextHash) {
     window.history.replaceState(null, "", nextHash);
@@ -52,7 +53,7 @@ export function EnquirySection() {
 
   return (
     <section
-      id="enquire"
+      id={sectionAnchors.enquire.slice(1)}
       aria-labelledby="enquire-heading"
       className="scroll-mt-20 border-t border-border/60 bg-muted/35"
     >
