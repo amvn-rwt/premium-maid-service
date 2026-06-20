@@ -1,3 +1,4 @@
+import { CornerRightDown } from "lucide-react";
 import { PillCtaButton } from "@/components/ui/pill-cta-button";
 import { Button } from "@/components/ui/button";
 import { heroContent } from "@/lib/content/hero";
@@ -25,7 +26,9 @@ export function HeroCopy() {
         <span className="mt-1 block text-foreground">
           {heroContent.headline.line2}{" "}
           <span className="relative inline-block text-primary">
-            <span className="relative z-10">{heroContent.headline.highlight}</span>
+            <span className="relative z-10">
+              {heroContent.headline.highlight}
+            </span>
             <span
               aria-hidden
               className="absolute -bottom-0.5 left-0 z-0 h-[0.42em] w-full -skew-x-3 rounded-sm bg-primary/20"
@@ -41,7 +44,8 @@ export function HeroCopy() {
             key={service}
             className={cn(
               "rounded-full border border-border/70 bg-muted/50 px-3 py-1 text-sm font-medium text-foreground/90",
-              service === "Japa maids" && "border-primary/20 bg-primary/5 text-primary",
+              service === "Japa maids" &&
+                "border-primary/20 bg-primary/5 text-primary",
             )}
           >
             {service}
@@ -58,9 +62,20 @@ export function HeroCopy() {
         <Button
           asChild
           variant="outline"
-          className="h-12 rounded-full border-border px-6 text-base font-medium"
+          className="group h-12 rounded-full border-border pl-6 pr-1.5 text-base font-medium"
         >
-          <a href={heroContent.secondaryCtaHref}>{heroContent.secondaryCta}</a>
+          <a href={heroContent.secondaryCtaHref}>
+            <span>{heroContent.secondaryCta}</span>
+            <span
+              aria-hidden
+              className="flex size-9 shrink-0 items-center justify-center rounded-full bg-foreground transition-transform duration-300 ease-out group-hover:scale-[1.04]"
+            >
+              <CornerRightDown
+                className="size-4 text-primary-foreground motion-safe:animate-pill-cta-icon motion-safe:group-hover:[animation-duration:3.25s]"
+                strokeWidth={2.25}
+              />
+            </span>
+          </a>
         </Button>
       </div>
     </div>

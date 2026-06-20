@@ -4,6 +4,7 @@
  */
 export const siteConfig = {
   name: "Premium Maid Service",
+  logoText: "PremiumMaidService",
   description:
     "Maids, cooks, babysitters, and Japa maids in Delhi NCR. Enquire by form, call, or WhatsApp.",
   serviceArea: "Delhi NCR",
