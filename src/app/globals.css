@@ -10,6 +10,10 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -50,6 +54,10 @@
   --muted-foreground: #5c6b66;
   --border: #d8e0dc;
   --ring: #e0654d;
+  --popover: #f9faf8;
+  --popover-foreground: #1a211f;
+  --accent: color-mix(in oklch, var(--primary) 12%, var(--background));
+  --accent-foreground: #1a211f;
   --radius: 0.625rem;
 }
 
