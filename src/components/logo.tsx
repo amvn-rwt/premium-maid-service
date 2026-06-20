@@ -5,9 +5,10 @@ import { cn } from "@/lib/utils";
 
 type LogoProps = {
   className?: string;
+  onDark?: boolean;
 };
 
-function Logo({ className }: LogoProps) {
+function Logo({ className, onDark = false }: LogoProps) {
   return (
     <Link
       href="/"
@@ -28,9 +29,13 @@ function Logo({ className }: LogoProps) {
         className="relative z-10 -ml-3.5 text-lg font-bold tracking-tight"
       >
         <span className="text-primary-foreground">re</span>
-        <span className="text-foreground">mium</span>
+        <span className={onDark ? "text-background" : "text-foreground"}>
+          mium
+        </span>
         <span className="text-primary">Maid</span>
-        <span className="text-foreground">Service</span>
+        <span className={onDark ? "text-background" : "text-foreground"}>
+          Service
+        </span>
       </span>
     </Link>
   );
