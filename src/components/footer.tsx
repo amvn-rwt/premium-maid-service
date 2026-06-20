@@ -64,10 +64,11 @@ export function Footer() {
           <p className="mt-3 max-w-md text-sm leading-relaxed text-background/70 text-pretty sm:text-base">
             {cta.supporting}
           </p>
-          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center">
+          <div className="mt-8 flex w-full flex-nowrap items-center justify-center gap-2 px-4 sm:gap-3 sm:px-0">
             <PillCtaButton
               href={cta.primaryHref}
-              className="bg-background text-foreground hover:bg-background/90"
+              size="sm"
+              className="shrink-0 bg-background text-foreground hover:bg-background/90 sm:h-12 sm:pl-6 sm:pr-1.5 sm:text-base [&_span:last-child]:sm:size-9 [&_svg]:sm:size-4"
             >
               {cta.primaryLabel}
             </PillCtaButton>
@@ -77,10 +78,10 @@ export function Footer() {
               rel="noopener noreferrer"
               className={cn(
                 buttonVariants({ variant: "outline" }),
-                "h-12 rounded-full border-background/25 bg-transparent px-6 text-base font-medium text-background hover:bg-background/10 hover:text-background",
+                "inline-flex h-9 shrink-0 items-center gap-2 rounded-full border-background/25 bg-transparent px-4 text-sm font-medium text-background hover:bg-background/10 hover:text-background sm:h-12 sm:px-6 sm:text-base",
               )}
             >
-              <WhatsAppIcon className="size-4 shrink-0" aria-hidden />
+              <WhatsAppIcon className="size-3.5 shrink-0 sm:size-4" aria-hidden />
               {cta.whatsappLabel}
             </a>
           </div>

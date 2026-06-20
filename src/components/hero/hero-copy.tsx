@@ -54,21 +54,27 @@ export function HeroCopy() {
         {heroContent.supporting}
       </p>
 
-      <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:items-start lg:justify-start">
-        <PillCtaButton href={heroContent.ctaHref}>{heroContent.cta}</PillCtaButton>
+      <div className="mt-8 flex w-full flex-nowrap items-center justify-center gap-2 px-4 sm:gap-3 sm:px-0 lg:justify-start">
+        <PillCtaButton
+          href={heroContent.ctaHref}
+          size="sm"
+          className="shrink-0 sm:h-12 sm:pl-6 sm:pr-1.5 sm:text-base [&_span:last-child]:sm:size-9 [&_svg]:sm:size-4"
+        >
+          {heroContent.cta}
+        </PillCtaButton>
         <Button
           asChild
           variant="outline"
-          className="group h-12 rounded-full border-border pl-6 pr-1.5 text-base font-medium"
+          className="group h-9 shrink-0 rounded-full border-border pl-4 pr-1 text-sm font-medium sm:h-12 sm:pl-6 sm:pr-1.5 sm:text-base"
         >
           <a href={heroContent.secondaryCtaHref}>
             <span>{heroContent.secondaryCta}</span>
             <span
               aria-hidden
-              className="flex size-9 shrink-0 items-center justify-center rounded-full bg-foreground transition-transform duration-300 ease-out group-hover:scale-[1.04]"
+              className="flex size-7 shrink-0 items-center justify-center rounded-full bg-foreground transition-transform duration-300 ease-out group-hover:scale-[1.04] sm:size-9"
             >
               <CornerRightDown
-                className="size-4 text-primary-foreground motion-safe:animate-pill-cta-icon motion-safe:group-hover:[animation-duration:3.25s]"
+                className="size-3.5 text-primary-foreground motion-safe:animate-pill-cta-icon motion-safe:group-hover:[animation-duration:3.25s] sm:size-4"
                 strokeWidth={2.25}
               />
             </span>

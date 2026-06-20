@@ -10,6 +10,7 @@ import {
 } from "react";
 
 import { cn } from "@/lib/utils";
+import { durationForDistance } from "@/lib/motion";
 
 type SlidingTabItem<T extends string> = {
   value: T;
@@ -35,19 +36,31 @@ function SlidingTabs<T extends string>({
   const scrollRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const tabRefs = useRef(new Map<T, HTMLButtonElement>());
-  const [indicator, setIndicator] = useState({ left: 0, width: 0 });
+  const previousLeftRef = useRef(0);
+  const interactionRef = useRef<"pointer" | "keyboard">("pointer");
+  const [indicator, setIndicator] = useState({ left: 0, width: 0, duration: 300 });
 
   const updateIndicator = useCallback(() => {
     const list = listRef.current;
     const activeTab = tabRefs.current.get(value);
     if (!list || !activeTab) {
-      setIndicator({ left: 0, width: 0 });
+      setIndicator({ left: 0, width: 0, duration: 220 });
       return;
     }
 
+    const left = activeTab.offsetLeft;
+    const width = activeTab.offsetWidth;
+    const distance = Math.abs(left - previousLeftRef.current);
+
+    previousLeftRef.current = left;
+
     setIndicator({
-      left: activeTab.offsetLeft,
-      width: activeTab.offsetWidth,
+      left,
+      width,
+      duration:
+        interactionRef.current === "keyboard"
+          ? 0
+          : durationForDistance(distance, { min: 220, max: 380 }),
     });
   }, [value]);
 
@@ -131,6 +144,7 @@ function SlidingTabs<T extends string>({
     if (nextIndex === null) return;
 
     event.preventDefault();
+    interactionRef.current = "keyboard";
     const nextItem = items[nextIndex];
     onChange(nextItem.value);
     tabRefs.current.get(nextItem.value)?.focus();
@@ -160,11 +174,15 @@ function SlidingTabs<T extends string>({
                 id={`${tablistId}-${item.value}`}
                 aria-selected={isActive}
                 tabIndex={isActive ? 0 : -1}
-                onClick={() => onChange(item.value)}
+                onClick={() => {
+                  interactionRef.current = "pointer";
+                  onChange(item.value);
+                }}
                 onKeyDown={(event) => handleKeyDown(event, index)}
                 className={cn(
                   "relative z-10 shrink-0 cursor-pointer pb-3 text-sm font-medium whitespace-nowrap transition-colors duration-200 outline-none",
                   "focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+                  "motion-safe:transition-transform motion-safe:duration-150 motion-safe:ease-enter motion-safe:active:scale-[0.97]",
                   isActive
                     ? "text-primary"
                     : "text-muted-foreground hover:text-foreground",
@@ -183,12 +201,14 @@ function SlidingTabs<T extends string>({
           <span
             aria-hidden
             className={cn(
-              "pointer-events-none absolute bottom-0 left-0 z-10 h-0.5 rounded-full bg-primary transition-[left,width,opacity] duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] motion-reduce:transition-none",
+              "pointer-events-none absolute bottom-0 left-0 z-10 h-0.5 rounded-full bg-primary",
+              "motion-safe:transition-[left,width,opacity] motion-safe:ease-move motion-reduce:transition-none",
               indicator.width === 0 && "opacity-0",
             )}
             style={{
               width: indicator.width,
               left: indicator.left,
+              transitionDuration: `${indicator.duration}ms`,
             }}
           />
         </div>
