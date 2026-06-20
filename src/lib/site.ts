@@ -25,27 +25,7 @@ export const siteConfig = {
       whatsapp: "919871439287",
     },
   ],
-  /** Primary CTA phone — pending client confirmation (question 3). */
   primaryPhoneIndex: 0,
-  nav: [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Why Us", href: "#why-us" },
-    { label: "Reviews", href: "#reviews" },
-    { label: "Book Now", href: "#enquire" },
-  ],
-  footer: {
-    links: [
-      { label: "Services", href: "#services" },
-      { label: "How It Works", href: "#how-it-works" },
-      { label: "Book Now", href: "#enquire" },
-    ],
-    /** Pending client confirmation (questionnaire Q4, Q5, Q6). */
-    email: null as string | null,
-    address: null as string | null,
-    hours: null as string | null,
-  },
 } as const;
 
 export type Locale = (typeof siteConfig.locale.supported)[number];

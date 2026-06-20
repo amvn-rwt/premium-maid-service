@@ -1,37 +1,22 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
 
 @theme {
-  --color-accent-light: #5a9b7f;
-  --color-accent-on-primary: #8eceb0;
-  --color-muted-surface: #f3f4f2;
-
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-hindi: var(--font-noto-devanagari), var(--font-dm-sans), ui-sans-serif,
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-hindi: var(--font-noto-devanagari), var(--font-plus-jakarta), ui-sans-serif,
     system-ui, sans-serif;
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --color-input: var(--input);
   --color-ring: var(--ring);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
@@ -40,32 +25,17 @@
 }
 
 :root {
-  --background: #fafaf8;
-  --foreground: #1a1a1a;
-  --card: #fafaf8;
-  --card-foreground: #1a1a1a;
-  --popover: #fafaf8;
-  --popover-foreground: #1a1a1a;
-  --primary: #1e3a5f;
-  --primary-foreground: #fafaf8;
-  --secondary: #f3f4f2;
-  --secondary-foreground: #1a1a1a;
-  --muted: #f3f4f2;
-  --muted-foreground: #6b7280;
-  --accent: #2d6a4f;
-  --accent-foreground: #fafaf8;
-  --destructive: #dc2626;
-  --border: #e5e7e3;
-  --input: #e5e7e3;
-  --ring: #1e3a5f;
-  --radius: 0.5rem;
-
-  /* Mobile drawer — balanced enter/exit for a large surface */
-  --drawer-open-dur: 420ms;
-  --drawer-close-dur: 400ms;
-  --drawer-ease: cubic-bezier(0.32, 0.72, 0, 1);
-  --drawer-backdrop-open-dur: 380ms;
-  --drawer-backdrop-close-dur: 360ms;
+  --background: #f8f6f2;
+  --foreground: #1c1917;
+  --primary: #1b3a4b;
+  --primary-foreground: #f8f6f2;
+  --accent: #3d6b4f;
+  --accent-foreground: #f8f6f2;
+  --muted: #ece8e1;
+  --muted-foreground: #6b6560;
+  --border: #ddd6cc;
+  --ring: #1b3a4b;
+  --radius: 0.625rem;
 }
 
 @layer base {
@@ -81,7 +51,10 @@
     font-family: var(--font-hindi);
   }
 
-  * {
-    @apply border-border outline-ring/50;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
   }
 }

@@ -1,30 +1,26 @@
 # Premium Maid Service
 
-Marketing website for a domestic help agency — maids, cooks, babysitters, and Japa maids.
+Lead-generation marketing site for a Delhi NCR domestic-help agency.
 
-## Status
+## Stack
 
-In development. Next.js + Tailwind scaffold is in place; sections are being built step by step.
+- Next.js 15 + React 19 + TypeScript
+- Tailwind CSS v4
 
-## Development
+## Fonts
+
+- **Fraunces** — display / headings
+- **Plus Jakarta Sans** — body / UI
+- **Noto Sans Devanagari** — Hindi
+
+## Docs
+
+- `docs/PROJECT_BRIEF.md` — source of truth
+- `.cursor/rules/` — project scope and open decisions
+- `.cursor/skills/` — copy, forms, discovery workflows
+
+## Dev
 
 ```bash
-npm install
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Documentation
-
-- **[Project Brief](docs/PROJECT_BRIEF.md)** — decisions, site structure, layout wireframes, design system, client questions, launch checklist
-- **[Client Questionnaire](docs/CLIENT_QUESTIONNAIRE.md)** — discovery form for the client to fill at their own pace
-
-## Services (planned)
-
-- All-rounder maid
-- Cooking maid
-- Babycare
-- Japa maid
-- Housemaid
-- Booking / enquiry form

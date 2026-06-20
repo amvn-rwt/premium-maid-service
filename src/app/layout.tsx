@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
-import { DM_Sans, Noto_Sans_Devanagari } from "next/font/google";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { Fraunces, Noto_Sans_Devanagari, Plus_Jakarta_Sans } from "next/font/google";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-fraunces",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-plus-jakarta",
   display: "swap",
 });
 
@@ -32,10 +36,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${notoDevanagari.variable}`}>
-        <Header />
+      <body
+        className={`${fraunces.variable} ${plusJakarta.variable} ${notoDevanagari.variable}`}
+      >
         {children}
-        <Footer />
       </body>
     </html>
   );

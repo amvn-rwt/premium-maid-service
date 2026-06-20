@@ -1,9 +1,18 @@
-import { Hero } from "@/components/sections/Hero";
+import { siteConfig } from "@/lib/site";
 
 export default function HomePage() {
   return (
-    <main>
-      <Hero />
+    <main className="flex min-h-dvh flex-col items-center justify-center px-6 text-center">
+      <p className="text-sm font-medium tracking-wide text-accent uppercase">
+        Fresh start
+      </p>
+      <h1 className="mt-3 max-w-xl text-4xl font-semibold tracking-tight text-primary text-balance sm:text-5xl">
+        {siteConfig.name}
+      </h1>
+      <p className="mt-4 max-w-md text-base leading-relaxed text-muted-foreground text-pretty">
+        Design reset complete. Rules, skills, and docs are intact — ready to
+        rebuild step by step.
+      </p>
     </main>
   );
 }
