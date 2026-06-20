@@ -106,7 +106,7 @@ function SlidingTabs<T extends string>({
         ref={listRef}
         role="tablist"
         aria-label={ariaLabel}
-        className="relative flex gap-5 overflow-x-auto border-b border-border/70 [-ms-overflow-style:none] scrollbar-none sm:gap-6 [&::-webkit-scrollbar]:hidden"
+        className="relative flex gap-5 overflow-x-auto [-ms-overflow-style:none] scrollbar-none sm:gap-6 [&::-webkit-scrollbar]:hidden"
       >
         {items.map((item, index) => {
           const isActive = item.value === value;
@@ -140,10 +140,15 @@ function SlidingTabs<T extends string>({
 
         <span
           aria-hidden
-          className="pointer-events-none absolute bottom-0 left-0 h-0.5 rounded-full bg-primary transition-[transform,width] duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] motion-reduce:transition-none"
+          className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-px bg-border/70"
+        />
+
+        <span
+          aria-hidden
+          className="pointer-events-none absolute bottom-0 left-0 z-10 h-0.5 rounded-full bg-primary transition-[left,width] duration-300 ease-[cubic-bezier(0.25,1,0.5,1)] motion-reduce:transition-none"
           style={{
             width: indicator.width,
-            transform: `translateX(${indicator.left}px)`,
+            left: indicator.left,
           }}
         />
       </div>
