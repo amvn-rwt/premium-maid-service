@@ -19,12 +19,12 @@ export function MasonryTileAction({ action }: MasonryTileActionProps) {
         className={cn(
           "relative overflow-hidden rounded-lg border border-white/50",
           "bg-white/15 p-3.5 shadow-[0_8px_32px_-8px_rgba(26,33,31,0.18)] backdrop-blur-xl",
-          "supports-[backdrop-filter]:bg-white/15 sm:p-4",
+          "supports-backdrop-filter:bg-white/15 sm:p-4",
         )}
       >
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-white/60 via-white/30 to-transparent"
+          className="pointer-events-none absolute inset-0 bg-linear-to-t from-white/60 via-white/30 to-transparent"
         />
         <div className="relative flex flex-col gap-3">
           <p className="text-[11px] leading-snug font-medium text-foreground/80 sm:text-xs">
