@@ -15,7 +15,8 @@ export function WhatsAppButton({ className }: WhatsAppButtonProps) {
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
       className={cn(
-        buttonVariants({ variant: "default", size: "icon-lg" }),
+        buttonVariants({ size: "icon-lg" }),
+        "border-transparent bg-foreground text-[#25D366] hover:bg-foreground/90",
         className,
       )}
     >
