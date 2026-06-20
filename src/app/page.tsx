@@ -1,3 +1,4 @@
+import { PillCtaButton } from "@/components/ui/pill-cta-button";
 import { siteConfig } from "@/lib/site";
 
 export default function HomePage() {
@@ -10,6 +11,7 @@ export default function HomePage() {
         Design reset complete. Rules, skills, and docs are intact — ready to
         rebuild step by step.
       </p>
+      <PillCtaButton className="mt-8" />
     </main>
   );
 }

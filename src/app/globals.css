@@ -14,6 +14,31 @@
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
+  --animate-pill-cta-icon: pill-cta-icon-wiggle 4.5s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+
+  @keyframes pill-cta-icon-wiggle {
+    0%,
+    34%,
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+
+    7% {
+      transform: translate(0.5px, -0.5px) rotate(-2.5deg);
+    }
+
+    14% {
+      transform: translate(1px, -1px) rotate(-3.5deg);
+    }
+
+    21% {
+      transform: translate(1.5px, -1.5px) rotate(2deg);
+    }
+
+    28% {
+      transform: translate(1px, -1px) rotate(3deg);
+    }
+  }
 }
 
 :root {
