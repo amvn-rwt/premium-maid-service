@@ -55,7 +55,7 @@ export function HeroCopy() {
       </p>
 
       <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center lg:items-start lg:justify-start">
-        <PillCtaButton>{heroContent.cta}</PillCtaButton>
+        <PillCtaButton href="#enquire">{heroContent.cta}</PillCtaButton>
         <Button
           asChild
           variant="outline"

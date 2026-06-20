@@ -51,19 +51,19 @@ const pillCtaArrowVariants = cva(
 );
 
 type PillCtaButtonProps = React.ComponentProps<typeof Button> &
-  VariantProps<typeof pillCtaButtonVariants>;
+  VariantProps<typeof pillCtaButtonVariants> & {
+    href?: string;
+  };
 
 function PillCtaButton({
   children = "Get Started Now",
   className,
   size = "default",
+  href,
   ...props
 }: PillCtaButtonProps) {
-  return (
-    <Button
-      className={cn(pillCtaButtonVariants({ size }), className)}
-      {...props}
-    >
+  const content = (
+    <>
       <span>{children}</span>
       <span aria-hidden className={pillCtaIconVariants({ size })}>
         <ArrowUpRight
@@ -71,6 +71,27 @@ function PillCtaButton({
           strokeWidth={2.25}
         />
       </span>
+    </>
+  );
+
+  if (href) {
+    return (
+      <Button
+        asChild
+        className={cn(pillCtaButtonVariants({ size }), className)}
+        {...props}
+      >
+        <a href={href}>{content}</a>
+      </Button>
+    );
+  }
+
+  return (
+    <Button
+      className={cn(pillCtaButtonVariants({ size }), className)}
+      {...props}
+    >
+      {content}
     </Button>
   );
 }

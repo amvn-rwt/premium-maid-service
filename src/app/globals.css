@@ -14,6 +14,7 @@
   --color-popover-foreground: var(--popover-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -58,6 +59,7 @@
   --popover-foreground: #1a211f;
   --accent: color-mix(in oklch, var(--primary) 12%, var(--background));
   --accent-foreground: #1a211f;
+  --destructive: #b42318;
   --radius: 0.625rem;
 }
 
