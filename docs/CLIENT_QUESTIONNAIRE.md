@@ -37,6 +37,10 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 | ✓ | Working hours | Mon–Sat, 10 AM – 7 PM |
 | ✓ | Enquiries to | Ankush — primary WhatsApp number |
 | ✓ | Form submit | Email to Ankushhanry@icloud.com |
+| ✓ | Logo | No image — text logo **Premium Maid Service** (as built) |
+| ✓ | Brand colours | Keep current site palette (teal primary, clean white) |
+| ✓ | Hero headline | **"Reliable help for your Home"** + existing supporting copy |
+| ✓ | Pricing on site | **No** — enquiry only ("Contact us for rates") |
 
 ---
 
@@ -86,19 +90,7 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 
 ## C. Pricing & fees
 
-**16.** Should the website show **pricing / salary ranges / agency fees**?
-
-- [ ] Yes — share details or a rate card
-- [ ] No — enquiry only ("Contact us for rates")
-- [ ] Partial — e.g. "starting from ₹X" only
-
-**17.** If yes, please share (or attach a photo/PDF):
-
-`_________________________`
-
-**18.** Agency / placement fee — fixed amount or % of salary?
-
-`_________________________`
+~~**16–18.**~~ — **confirmed** — don't show prices on site; enquiry only (client: "bhai ye rehndo").
 
 ---
 
@@ -213,22 +205,7 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 ## G. Brand & design
 
-**36.** Do you have a **logo**?
-
-- [ ] Yes — will send (SVG or PNG)
-- [ ] No — use text logo "Premium Maid Service" for now
-
-**37.** **Brand colours** — any preference?
-
-- [ ] Use your suggestion (professional navy/teal + clean white)
-- [ ] I have specific colours: `_________________________`
-
-**38.** Pick a **hero headline** style (or write your own):
-
-- [ ] **A** — "Verified maids, cooks, and caregivers for your home. Book in minutes."
-- [ ] **B** — "All-Rounder · Cook · Babycare · Japa · Housemaid — matched to your family's needs."
-- [ ] **C** — "Delhi NCR's trusted maid agency. Full-time, part-time & live-in options."
-- [ ] **Custom:** `_________________________`
+~~**36–38.**~~ — **confirmed** — use what's already on the site (text logo, current colours, hero copy as written).
 
 ---
 
@@ -285,7 +262,7 @@ While you fill this in, we'll proceed in **small steps** — one component at a 
 |------|-----------|-----------|
 | 1 | Project setup (Next.js + Tailwind) | Confirmed stack from brief |
 | 2 | Layout shell — header, footer | Both phone numbers, Delhi NCR |
-| 3 | Hero section | Draft copy; no unverified claims |
+| 3 | Hero section | Confirmed copy — "Reliable help for your Home" |
 | 4 | Services cards | Five services from brief |
 | 5 | Sticky Call + WhatsApp bar | Both numbers until primary is chosen |
 | 6 | Enquiry form | Standard fields; WhatsApp fallback until email is confirmed |

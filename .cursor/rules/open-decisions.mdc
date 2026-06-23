@@ -20,13 +20,16 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 | Hours | Mon–Sat, 10 AM – 7 PM |
 | Office address | Not shown on site |
 | Lead routing (D5) | Form → email; WhatsApp on primary number |
+| Logo (D7) | Text logo — Premium Maid Service |
+| Brand colours (D7) | Current site palette (teal + white) |
+| Hero copy (D7) | "Reliable help for your Home" + existing supporting text |
+| Pricing (D3) | Enquiry only — no rates or fees on site |
 
 ## Still pending — use placeholders, do not invent
 
 - D2: Business model (agency vs direct employer)
-- D3: Pricing on site (rates vs enquiry-only)
 - D6: Domain and hosting
-- D7: Brand assets (logo, colors, photos)
+- D7: **Photos only** — team/office/stock (Section F); logo & colours locked
 - D8: Verification claims — **only if client confirms**
 - D9: Replacement / trial policy
 - D10: Legal pages wording

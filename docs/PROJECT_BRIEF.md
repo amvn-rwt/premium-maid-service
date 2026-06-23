@@ -36,11 +36,11 @@ These must be confirmed on the discovery call before build starts.
 |---|----------|---------|--------|
 | D1 | **Service area** | Single city, metro region (e.g. Delhi NCR), or pan-India | ✅ **Delhi NCR** |
 | D2 | **Business model** | Placement agency vs. direct employer vs. aggregator | ⬜ Pending |
-| D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ⬜ Pending |
+| D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ✅ **Enquiry only** — no prices on site |
 | D4 | **Languages** | Hindi only, English only, or bilingual (Hindi + English) | ✅ **Bilingual (English + Hindi)** |
 | D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (Ankushhanry@icloud.com) + WhatsApp on primary number |
 | D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ⬜ Pending |
-| D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ⬜ Pending |
+| D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial** — text logo, current palette, hero copy locked; photos TBD (Section F) |
 | D8 | **Verification claims** | Police check, ID verification, training — only if actually offered | ⬜ Pending |
 | D9 | **Replacement / trial policy** | Guarantee period, trial days, refund terms | ⬜ Pending |
 | D10 | **Legal pages** | Privacy policy, terms of service — required if collecting personal data | ⬜ Pending |
@@ -429,9 +429,21 @@ Avoid dark themes — they conflict with “clean home services” perception.
 | **Office address** | Not on site |
 | **Form routing** | Email on submit; WhatsApp as secondary CTA |
 
-Still to confirm: main button wording (Q8 — using "Enquire Now"), then Section G (logo, colours, hero headline).
+Still to confirm: main button wording (Q8 — using "Enquire Now"); photos (Section F).
 
-### Client answers (WhatsApp — 23 Jun 2026, Ankush)
+### Client answers — Section G (Jun 2026, Ankush)
+
+| Item | Answer |
+|------|--------|
+| Logo | None — keep text logo as built |
+| Colours | Keep current site colours |
+| Hero | Keep headline and copy already written |
+
+### Client answers — Section C (WhatsApp, Ankush)
+
+| Item | Answer |
+|------|--------|
+| Pricing on site | No — skip / enquiry only ("bhai ye rehndo") |
 
 | Item | Answer |
 |------|--------|

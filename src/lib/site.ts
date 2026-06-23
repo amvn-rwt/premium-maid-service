@@ -39,6 +39,10 @@ export const siteConfig = {
     enquiryRecipient: "Ankush (primary number / WhatsApp)",
     formSubmit: "email" as const,
   },
+  pricing: {
+    showOnSite: false,
+    cta: "Contact us for rates",
+  },
 } as const;
 
 export type Locale = (typeof siteConfig.locale.supported)[number];

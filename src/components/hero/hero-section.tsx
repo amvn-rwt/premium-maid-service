@@ -20,8 +20,10 @@ export function HeroSection() {
             <div className="relative aspect-square">
               <HeroImageGrid />
 
-              <div className="absolute top-1/2 left-1/2 z-10 w-[min(92%,14.5rem)] -translate-x-1/2 -translate-y-1/2 sm:w-52">
-                <HeroImageCallCard />
+              <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
+                <div className="pointer-events-auto w-max max-w-[92%]">
+                  <HeroImageCallCard />
+                </div>
               </div>
             </div>
           </div>

@@ -18,27 +18,33 @@ description: >-
 2. Update `.cursor/rules/open-decisions.mdc` if confirmed values change
 3. Do not mark verification claims, testimonials, or stats as confirmed without explicit client proof
 
-## Confirmed so far (19 Jun 2026)
+## Confirmed so far
 
 | Item | Value |
 |------|-------|
 | D1 Service area | Delhi NCR |
 | D4 Languages | Bilingual EN + HI |
+| D5 Lead routing | Email + WhatsApp on primary |
 | Primary phone | 7428127908 — call + WhatsApp |
 | Secondary phone | 9871439287 — call only |
-| Form submit | Email → Ankushhanry@icloud.com |
+| Enquiry email | Ankushhanry@icloud.com |
 | Hours | Mon–Sat, 10 AM – 7 PM |
 | Office address | Not on site |
+| D7 Logo | Text logo — Premium Maid Service |
+| D7 Colours | Current site palette |
+| D7 Hero | "Reliable help for your Home" + existing copy |
+| D3 Pricing | Enquiry only — no prices on site |
 
 ## Still ask client
 
 Priority follow-ups:
 
-1. Main button text if they want something other than "Enquire Now" (Q8)
-2. Logo, brand colors, hero headline (Section G — D7)
-3. Pricing on site vs enquiry-only (D3)
-6. Verification/replacement claims — only if true (D8, D9)
-7. Logo, brand colors, photos (D7)
+1. Services detail (Section E)
+2. Policies & trust — only if true (D8, D9 / Sections D & F)
+3. Photos — team/office or stock (Section F, remainder of D7)
+4. Domain & go-live (Section I)
+
+Optional: main button text if they want something other than "Enquire Now" (Q8).
 
 Full question list: `docs/PROJECT_BRIEF.md` Section 3.
 
@@ -48,7 +54,7 @@ Full question list: `docs/PROJECT_BRIEF.md` Section 3.
 - **Per service** — cooking veg/non-veg, babycare age, Japa specifics, housemaid vs all-rounder
 - **Trust** — police verification, testimonials, photos, USP
 - **Contact** — phone, WhatsApp, email, hours, lead routing
-- **Technical** — logo, colors, social links, timeline
+- **Technical** — social links, timeline, legal pages
 
 ## Output format after a client message
 
