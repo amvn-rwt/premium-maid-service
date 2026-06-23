@@ -49,7 +49,8 @@ export const enquirySectionContent = {
   privacyNote: "Your details are only used to respond to this enquiry.",
   submitLabel: "Send enquiry",
   whatsappLabel: "Or chat on WhatsApp",
-  successHint: "We'll open WhatsApp with your details pre-filled — review and send.",
+  successHint: "Thanks — we've received your enquiry and will get back to you soon.",
+  submitErrorHint: "Something went wrong. Please try again or message us on WhatsApp.",
 } as const;
 
 export const workTypeOptions: readonly { value: WorkType; label: string }[] = [

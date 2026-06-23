@@ -13,14 +13,18 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 |------|-------|
 | Service area | Delhi NCR |
 | Languages | Bilingual — English + Hindi |
-| Phone 1 | +91 7428127908 |
-| Phone 2 | +91 9871439287 |
+| Primary phone | +91 7428127908 — call + WhatsApp |
+| Secondary phone | +91 9871439287 — call only |
+| Hero contact | Both numbers shown |
+| Enquiry email | Ankushhanry@icloud.com |
+| Hours | Mon–Sat, 10 AM – 7 PM |
+| Office address | Not shown on site |
+| Lead routing (D5) | Form → email; WhatsApp on primary number |
 
 ## Still pending — use placeholders, do not invent
 
 - D2: Business model (agency vs direct employer)
 - D3: Pricing on site (rates vs enquiry-only)
-- D5: Lead routing (email, WhatsApp, sheet, CRM)
 - D6: Domain and hosting
 - D7: Brand assets (logo, colors, photos)
 - D8: Verification claims — **only if client confirms**
@@ -31,5 +35,5 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 
 - Never fabricate testimonials, placement counts, years in business, or verification claims.
 - Do not claim "police verified" until D8 is confirmed.
-- WhatsApp vs call for each number is unconfirmed — support both numbers in footer; ask before picking a single primary for sticky bar.
+- Sticky bar and form WhatsApp use **primary only**; secondary is `tel:` links in footer and hero.
 - Hero Option C in brief still says `[City]` — use **Delhi NCR** where city is needed.

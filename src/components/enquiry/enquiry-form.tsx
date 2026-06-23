@@ -19,7 +19,7 @@ import {
   workTypeOptions,
 } from "@/lib/content/enquiry";
 import type { ServiceId } from "@/lib/content/services";
-import { buildEnquiryWhatsAppMessage } from "@/lib/enquiry/whatsapp-message";
+import { submitEnquiry } from "@/lib/enquiry/submit-enquiry";
 import {
   validateEnquiryForm,
   type EnquiryFormErrors,
@@ -59,6 +59,8 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
   const [values, setValues] = useState(() => initialValues(serviceId));
   const [errors, setErrors] = useState<EnquiryFormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   useEffect(() => {
     setValues((current) => ({
@@ -73,6 +75,7 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
     }));
     setErrors({});
     setSubmitted(false);
+    setSubmitError(null);
   }, [serviceId]);
 
   const updateField = useCallback(
@@ -93,17 +96,29 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
     updateField("service", nextService);
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const nextErrors = validateEnquiryForm(values);
     setErrors(nextErrors);
+    setSubmitError(null);
 
     if (Object.keys(nextErrors).length > 0) return;
 
-    const message = buildEnquiryWhatsAppMessage(values);
-    const href = whatsappHref(getPrimaryPhone().whatsapp, message);
-    window.open(href, "_blank", "noopener,noreferrer");
-    setSubmitted(true);
+    setSubmitting(true);
+
+    try {
+      await submitEnquiry(values);
+      setSubmitted(true);
+      setValues(initialValues(serviceId));
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : enquirySectionContent.submitErrorHint,
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const showMealPreference = values.service === "cooking";
@@ -302,8 +317,8 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
 
         <div className="space-y-3 pt-1">
           <div className="flex flex-wrap items-center gap-3">
-            <PillCtaButton type="submit" className="shrink-0">
-              {enquirySectionContent.submitLabel}
+            <PillCtaButton type="submit" className="shrink-0" disabled={submitting}>
+              {submitting ? "Sending…" : enquirySectionContent.submitLabel}
             </PillCtaButton>
 
             <Button
@@ -329,6 +344,12 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
           {submitted ? (
             <p className="text-sm text-foreground/90">
               {enquirySectionContent.successHint}
+            </p>
+          ) : null}
+
+          {submitError ? (
+            <p role="alert" className="text-sm text-destructive">
+              {submitError}
             </p>
           ) : null}
         </div>

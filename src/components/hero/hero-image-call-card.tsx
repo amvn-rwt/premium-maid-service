@@ -40,6 +40,11 @@ export function HeroImageCallCard() {
                     )}
                   >
                     {phone.label}
+                    <span className="font-normal text-background/45">
+                      {" "}
+                      ·{" "}
+                      {phone.channels.whatsapp ? "Call & WhatsApp" : "Call only"}
+                    </span>
                   </span>
                   <span className="truncate text-xs font-semibold tracking-tight text-background sm:text-sm">
                     {phone.display}

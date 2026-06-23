@@ -24,20 +24,21 @@ description: >-
 |------|-------|
 | D1 Service area | Delhi NCR |
 | D4 Languages | Bilingual EN + HI |
-| Phones | 7428127908, 9871439287 |
+| Primary phone | 7428127908 — call + WhatsApp |
+| Secondary phone | 9871439287 — call only |
+| Form submit | Email → Ankushhanry@icloud.com |
+| Hours | Mon–Sat, 10 AM – 7 PM |
+| Office address | Not on site |
 
 ## Still ask client
 
 Priority follow-ups:
 
-1. WhatsApp — same numbers as call, or different?
-2. Primary phone for header/sticky bar
-3. Email for form submissions (D5)
-4. Business hours and office address
-5. Pricing on site vs enquiry-only (D3)
+1. Main button text if they want something other than "Enquire Now" (Q8)
+2. Logo, brand colors, hero headline (Section G — D7)
+3. Pricing on site vs enquiry-only (D3)
 6. Verification/replacement claims — only if true (D8, D9)
 7. Logo, brand colors, photos (D7)
-8. Preferred CTA wording: Book now / Get a quote / Enquire on WhatsApp
 
 Full question list: `docs/PROJECT_BRIEF.md` Section 3.
 

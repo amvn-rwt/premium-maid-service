@@ -29,62 +29,20 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 |---|------|-------------|
 | ✓ | Service area | Delhi NCR |
 | ✓ | Languages on site | English + Hindi |
-| ✓ | Phone 1 | 7428127908 |
-| ✓ | Phone 2 | 9871439287 |
+| ✓ | **7428127908** (primary) | Call + WhatsApp — primary for sticky bar & form |
+| ✓ | **9871439287** (secondary) | Call only |
+| ✓ | Hero contact card | Both numbers shown |
+| ✓ | Enquiry email | Ankushhanry@icloud.com |
+| ✓ | Office address | Not shown on site |
+| ✓ | Working hours | Mon–Sat, 10 AM – 7 PM |
+| ✓ | Enquiries to | Ankush — primary WhatsApp number |
+| ✓ | Form submit | Email to Ankushhanry@icloud.com |
 
 ---
 
 ## A. Contact & how enquiries reach you
 
-**1.** Is **7428127908** for:
-
-- [ ] Calls only
-- [ ] WhatsApp only
-- [ ] Both call and WhatsApp
-
-**2.** Is **9871439287** for:
-
-- [ ] Calls only
-- [ ] WhatsApp only
-- [ ] Both call and WhatsApp
-
-**3.** Which number should be **primary** on the website header and sticky Call/WhatsApp buttons?
-
-- [ ] 7428127908
-- [ ] 9871439287
-- [ ] Show both equally
-
-**4.** **Email** for form submissions (when someone fills the enquiry form on the site):
-
-`_________________________`
-
-**5.** **Office address** — should we show it on the website?
-
-- [ ] Yes — full address: `_________________________`
-- [ ] No — contact by phone/WhatsApp only
-
-**6.** **Business hours** (e.g. Mon–Sat, 10 AM – 8 PM):
-
-`_________________________`
-
-**7.** Who receives enquiries?
-
-- [ ] You only
-- [ ] You + someone else (names/numbers): `_________________________`
-
-**8.** Preferred main button text on the site:
-
-- [ ] Book a Maid
-- [ ] Get a Quote
-- [ ] Enquire on WhatsApp
-- [ ] Other: `_________________________`
-
-**9.** When someone submits the enquiry form, what should happen?
-
-- [ ] Email to you
-- [ ] WhatsApp notification
-- [ ] Google Sheet
-- [ ] Not sure — suggest something simple
+~~**1–9.**~~ — **confirmed** (see table above). Q8 (button text) not specified — using **Enquire Now** for now.
 
 ---
 

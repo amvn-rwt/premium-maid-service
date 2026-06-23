@@ -18,6 +18,8 @@ export const footerContent = {
   linksHeading: "Quick links",
   servicesHeading: "Services",
   contactHeading: "Contact",
+  hoursLabel: siteConfig.contact.hours.summary,
+  emailLabel: siteConfig.contact.enquiryEmail,
   servingLabel: `Serving ${siteConfig.serviceArea}`,
   descriptionLines: [
     "Maids, cooks, babysitters, and Japa maids in Delhi NCR.",

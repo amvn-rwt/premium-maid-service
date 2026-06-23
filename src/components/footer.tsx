@@ -50,6 +50,8 @@ export function Footer() {
     linksHeading,
     servicesHeading,
     contactHeading,
+    hoursLabel,
+    emailLabel,
     servingLabel,
     descriptionLines,
   } = footerContent;
@@ -130,6 +132,15 @@ export function Footer() {
                     </a>
                   </li>
                 ))}
+                <li>
+                  <a
+                    href={`mailto:${emailLabel}`}
+                    className="text-sm text-background/70 transition-colors hover:text-background"
+                  >
+                    {emailLabel}
+                  </a>
+                </li>
+                <li className="text-sm text-background/70">{hoursLabel}</li>
               </ul>
             </div>
           </div>

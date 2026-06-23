@@ -18,15 +18,27 @@ export const siteConfig = {
       display: "+91 74281 27908",
       tel: "+917428127908",
       whatsapp: "917428127908",
+      channels: { call: true, whatsapp: true },
     },
     {
       label: "Secondary",
       display: "+91 98714 39287",
       tel: "+919871439287",
-      whatsapp: "919871439287",
+      channels: { call: true, whatsapp: false },
     },
   ],
   primaryPhoneIndex: 0,
+  contact: {
+    enquiryEmail: "Ankushhanry@icloud.com",
+    showOfficeAddress: false,
+    hours: {
+      summary: "Mon–Sat, 10 AM – 7 PM",
+      days: "Monday to Saturday",
+      time: "10 AM – 7 PM",
+    },
+    enquiryRecipient: "Ankush (primary number / WhatsApp)",
+    formSubmit: "email" as const,
+  },
 } as const;
 
 export type Locale = (typeof siteConfig.locale.supported)[number];
