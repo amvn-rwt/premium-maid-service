@@ -20,7 +20,9 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
     <Link
       href={getServiceEnquireHref(service.id)}
       className={cn(
-        "group relative flex w-70 shrink-0 snap-start flex-col overflow-hidden rounded-[1.35rem] sm:w-75",
+        "group relative z-0 flex w-70 shrink-0 snap-start flex-col overflow-hidden rounded-[1.35rem] sm:w-75",
+        "transform-gpu transition-transform duration-400 ease-enter will-change-transform",
+        "motion-safe:hover:z-10 motion-safe:hover:scale-[1.02] motion-safe:active:scale-[0.99]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className,
       )}
@@ -39,7 +41,7 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
           fill
           sizes="(max-width: 640px) 70vw, 300px"
           className={cn(
-            "object-cover transition-transform duration-500 ease-out motion-safe:group-hover:scale-[1.03]",
+            "object-cover",
             isFeatured ? "brightness-[0.92]" : "brightness-[0.97]",
           )}
         />
