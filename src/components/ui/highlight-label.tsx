@@ -12,7 +12,7 @@ function HighlightLabel({ children, className }: HighlightLabelProps) {
         <span className="relative z-10">{children}</span>
         <span
           aria-hidden
-          className="absolute -bottom-0.5 left-0 z-0 h-[0.42em] w-full -skew-x-3 rounded-sm bg-primary/20"
+          className="absolute bottom-[-0.04em] left-0 z-0 h-[0.42em] w-full -skew-x-3 rounded-sm bg-primary/20"
         />
       </span>
     </p>
