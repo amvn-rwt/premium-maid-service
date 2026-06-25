@@ -34,6 +34,7 @@ function EnquiryVisualPanelContent({
         alt={content.image.alt}
         fill
         priority
+        quality={85}
         sizes="(max-width: 1024px) 100vw, 50vw"
         className={cn(
           "object-cover transition-opacity duration-500 ease-out",

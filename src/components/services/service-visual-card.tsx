@@ -39,6 +39,7 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
           alt=""
           aria-hidden
           fill
+          quality={85}
           sizes="(max-width: 640px) 70vw, 300px"
           className={cn(
             "object-cover",

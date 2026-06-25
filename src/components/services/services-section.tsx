@@ -47,7 +47,7 @@ export function ServicesSection() {
         </p>
 
         <div
-          className="mt-2 flex min-w-0 snap-x snap-mandatory gap-4 overflow-x-auto py-2 [-ms-overflow-style:none] scrollbar-none sm:mt-3 sm:gap-5 [&::-webkit-scrollbar]:hidden"
+          className="-mx-3 mt-1 flex min-w-0 snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-3 px-3 py-3 [-ms-overflow-style:none] scrollbar-none sm:mt-2 sm:gap-5 [&::-webkit-scrollbar]:hidden"
           role="list"
         >
           {items.map((service) => (
