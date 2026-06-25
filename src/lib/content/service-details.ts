@@ -31,7 +31,8 @@ export type ServiceDetailContent = {
 export const serviceDetailModalContent = {
   enquiringLabel: "Service",
   overviewLabel: "Overview",
-  ctaLabel: (name: string) => `Enquire about ${name}`,
+  ctaLabel: "Enquire about this service",
+  ctaAriaLabel: (name: string) => `Enquire about ${name}`,
   whatsappLabel: "Ask on WhatsApp",
   closeLabel: "Close",
 } as const;

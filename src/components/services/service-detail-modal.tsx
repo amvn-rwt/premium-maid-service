@@ -77,7 +77,7 @@ export function ServiceDetailModal({
           className="flex max-h-[90dvh] w-[calc(100vw-1.5rem)] max-w-4xl flex-col overflow-hidden rounded-[1.6rem] bg-background shadow-2xl ring-1 ring-foreground/10 sm:w-[calc(100vw-3rem)] sm:rounded-[1.85rem] lg:max-h-[86dvh] lg:flex-row"
         >
           <DialogClose
-            className="absolute top-3.5 right-3.5 z-20 inline-flex size-9 items-center justify-center rounded-full bg-background/85 text-foreground ring-1 ring-foreground/10 backdrop-blur-sm transition-all duration-200 ease-enter hover:bg-background hover:scale-[1.04] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60"
+            className="absolute top-3.5 right-3.5 z-20 inline-flex size-9 cursor-pointer items-center justify-center rounded-full bg-background/85 text-foreground ring-1 ring-foreground/10 backdrop-blur-sm transition-all duration-200 ease-enter hover:bg-background hover:scale-[1.04] active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60"
             aria-label={serviceDetailModalContent.closeLabel}
           >
             <X className="size-4" strokeWidth={2.25} />
@@ -140,9 +140,9 @@ export function ServiceDetailModal({
           <div className="flex min-h-0 flex-1 flex-col">
             <div className="min-h-0 flex-1 overflow-y-auto px-5 py-6 sm:px-7 sm:py-7">
               <section>
-                <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                <h3 className="text-lg font-bold tracking-tight text-foreground">
                   {serviceDetailModalContent.overviewLabel}
-                </p>
+                </h3>
                 <DialogDescription
                   id={`service-modal-desc-${content.id}`}
                   className="mt-2 text-[0.95rem] leading-relaxed text-foreground/90 text-pretty"
@@ -152,10 +152,10 @@ export function ServiceDetailModal({
               </section>
 
               <section className="mt-7">
-                <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                <HighlightLabel className="text-lg tracking-tight">
                   {detail.includedLabel}
-                </p>
-                <ul className="mt-3 grid gap-2.5 sm:grid-cols-2">
+                </HighlightLabel>
+                <ul className="mt-4 grid gap-2.5 sm:grid-cols-2">
                   {detail.included.map(({ icon: Icon, title, description }) => (
                     <li
                       key={title}
@@ -182,9 +182,9 @@ export function ServiceDetailModal({
               </section>
 
               <section className="mt-7">
-                <p className="text-xs font-semibold tracking-wide text-muted-foreground uppercase">
+                <h3 className="text-lg font-bold tracking-tight text-foreground">
                   {detail.goodToKnowLabel}
-                </p>
+                </h3>
                 <ul className="mt-3 space-y-2.5">
                   {detail.goodToKnow.map((point) => (
                     <li key={point} className="flex items-start gap-2.5">
@@ -205,9 +205,12 @@ export function ServiceDetailModal({
                 <button
                   type="button"
                   onClick={handleEnquire}
-                  className="group inline-flex h-12 flex-1 cursor-pointer items-center justify-between gap-2 rounded-full bg-foreground pr-1.5 pl-6 text-base font-medium text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  aria-label={serviceDetailModalContent.ctaAriaLabel(content.name)}
+                  className="group inline-flex h-12 min-w-0 flex-1 cursor-pointer items-center justify-between gap-3 rounded-full bg-foreground pr-1.5 pl-6 text-sm font-medium whitespace-nowrap text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-base"
                 >
-                  <span>{serviceDetailModalContent.ctaLabel(content.name)}</span>
+                  <span className="truncate">
+                    {serviceDetailModalContent.ctaLabel}
+                  </span>
                   <span
                     aria-hidden
                     className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary transition-transform duration-300 ease-out group-hover:scale-[1.04]"
