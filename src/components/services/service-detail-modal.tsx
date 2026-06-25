@@ -84,7 +84,7 @@ export function ServiceDetailModal({
           </DialogClose>
 
           <div className="relative w-full shrink-0 overflow-hidden lg:w-[44%]">
-            <div className="relative aspect-4/5 w-full sm:aspect-3/2 lg:h-full lg:aspect-auto">
+            <div className="relative aspect-16/10 w-full sm:aspect-3/2 lg:h-full lg:aspect-auto">
               <Image
                 src={content.image.src}
                 alt={content.image.alt}
@@ -107,18 +107,18 @@ export function ServiceDetailModal({
                 </span>
               ) : null}
 
-              <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+              <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
                 <HighlightLabel>
                   {serviceDetailModalContent.enquiringLabel}
                 </HighlightLabel>
-                <DialogTitle className="mt-1.5 text-2xl font-semibold tracking-tight text-background sm:text-3xl">
+                <DialogTitle className="mt-1 text-xl font-semibold tracking-tight text-background sm:mt-1.5 sm:text-3xl">
                   {content.name}
                 </DialogTitle>
-                <p className="mt-2 max-w-sm text-sm leading-relaxed text-background/80 text-pretty">
+                <p className="mt-1.5 max-w-sm text-sm leading-relaxed text-background/80 text-pretty sm:mt-2">
                   {content.tagline}
                 </p>
 
-                <ul className="mt-4 flex flex-wrap gap-2">
+                <ul className="mt-3 flex flex-wrap gap-2 sm:mt-4">
                   {content.highlights.map(({ icon: Icon, label }) => (
                     <li
                       key={label}
@@ -201,12 +201,12 @@ export function ServiceDetailModal({
             </div>
 
             <div className="shrink-0 border-t border-border/60 bg-background/80 p-4 backdrop-blur-sm sm:p-5">
-              <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-2.5">
                 <button
                   type="button"
                   onClick={handleEnquire}
                   aria-label={serviceDetailModalContent.ctaAriaLabel(content.name)}
-                  className="group inline-flex h-12 min-w-0 flex-1 cursor-pointer items-center justify-between gap-3 rounded-full bg-foreground pr-1.5 pl-6 text-sm font-medium whitespace-nowrap text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-base"
+                  className="group inline-flex h-12 min-w-0 cursor-pointer items-center justify-between gap-3 rounded-full bg-foreground pr-1.5 pl-6 text-sm font-medium whitespace-nowrap text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:flex-1 sm:text-base"
                 >
                   <span className="truncate">
                     {serviceDetailModalContent.ctaLabel}
@@ -226,7 +226,7 @@ export function ServiceDetailModal({
                   href={getPrimaryWhatsAppHref()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-5 text-sm font-medium text-primary transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:px-6"
+                  className="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-5 text-sm font-semibold text-primary transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:px-6"
                 >
                   <WhatsAppIcon className="size-4 shrink-0" />
                   {serviceDetailModalContent.whatsappLabel}
