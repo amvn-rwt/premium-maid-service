@@ -6,12 +6,8 @@ import { cn } from "@/lib/utils";
 
 export function HeroImageCallCard() {
   return (
-    <div className="w-fit rounded-xl bg-foreground p-3.5 shadow-[0_16px_48px_-10px_rgba(26,33,31,0.45)] ring-1 ring-inset ring-white/10 sm:p-4">
-      <p className="whitespace-nowrap text-[11px] leading-snug font-medium text-background/55 sm:text-xs">
-        Speak to us directly
-      </p>
-
-      <ul className="mt-2.5 flex w-fit flex-col gap-1.5 sm:mt-3 sm:gap-2">
+    <div className="w-fit rounded-xl bg-foreground p-1 shadow-[0_16px_48px_-10px_rgba(26,33,31,0.45)]">
+      <ul className="flex w-fit flex-col gap-1">
         {siteConfig.phones.map((phone) => {
           const isPrimary = phone.label === "Primary";
 

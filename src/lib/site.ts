@@ -29,7 +29,7 @@ export const siteConfig = {
   ],
   primaryPhoneIndex: 0,
   contact: {
-    enquiryEmail: "Ankushhanry@icloud.com",
+    enquiryEmail: "ankushhanry@icloud.com",
     showOfficeAddress: false,
     hours: {
       summary: "Mon–Sat, 10 AM – 7 PM",

@@ -2,6 +2,7 @@ import { CornerRightDown } from "lucide-react";
 import { PillCtaButton } from "@/components/ui/pill-cta-button";
 import { Button } from "@/components/ui/button";
 import { heroContent } from "@/lib/content/hero";
+import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function HeroCopy() {
@@ -81,6 +82,16 @@ export function HeroCopy() {
           </a>
         </Button>
       </div>
+
+      <p className="mt-5 text-sm text-muted-foreground">
+        Or email us at{" "}
+        <a
+          href={`mailto:${siteConfig.contact.enquiryEmail}`}
+          className="font-medium text-foreground underline-offset-4 transition-colors hover:text-primary hover:underline"
+        >
+          {siteConfig.contact.enquiryEmail}
+        </a>
+      </p>
     </div>
   );
 }
