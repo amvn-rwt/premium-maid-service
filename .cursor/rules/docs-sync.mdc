@@ -1,0 +1,38 @@
+---
+description: Keep project docs in sync when the website changes
+alwaysApply: true
+---
+
+# Docs stay in sync with the site
+
+When you **create, update, or delete** anything on the website, check whether docs need the same change. Do not leave docs describing old behaviour.
+
+## Source of truth
+
+| What changed | Update in code first | Then update docs |
+|--------------|---------------------|------------------|
+| Brand colours, fonts, tokens | `src/app/globals.css` | `docs/PROJECT_BRIEF.md` §6, `.cursor/rules/open-decisions.mdc`, `.cursor/skills/project-brief/SKILL.md`, `README.md` if stack/colours listed |
+| Contact, hours, service area | `src/lib/site.ts`, `src/lib/contact.ts` | `docs/PROJECT_BRIEF.md` §1–2, `docs/CLIENT_QUESTIONNAIRE.md`, `.cursor/rules/open-decisions.mdc` |
+| Services (add/remove/rename) | `src/lib/content/services.ts`, `public/images/services/` | `docs/PROJECT_BRIEF.md` §1 services list, `.cursor/skills/project-brief/SKILL.md` |
+| Copy, CTAs, section structure | `src/lib/content/*`, components | `docs/PROJECT_BRIEF.md` if it documents that section; skills if they summarise structure |
+| Images / assets | `public/images/**` | `docs/PROJECT_BRIEF.md` §6 imagery or checklist if asset inventory is tracked |
+| Confirmed client decisions (D1–D10) | relevant `src/` files | `docs/PROJECT_BRIEF.md` §2, `docs/CLIENT_QUESTIONNAIRE.md`, `.cursor/rules/open-decisions.mdc` |
+| Scope (new pages, features) | app routes, components | `docs/PROJECT_BRIEF.md`, `.cursor/rules/project-scope.mdc` if in/out of scope shifts |
+
+## Workflow
+
+1. Make the site change.
+2. Scan the table above for affected doc files.
+3. Update docs in the **same task** — do not defer unless the user explicitly asked for code-only.
+4. If a doc value is duplicated in multiple places, update **all** of them (especially `open-decisions.mdc` and `PROJECT_BRIEF.md`).
+
+## Rules
+
+- **Code wins** — if docs and `src/` disagree, fix the docs to match the live site.
+- **Do not invent** client facts in docs; only record confirmed values (see `open-decisions.mdc`).
+- **Skip trivial UI tweaks** (spacing, hover states) unless the brief explicitly documents that detail.
+- **Mention doc updates** in your summary when you changed both code and docs.
+
+## Image convention
+
+Service images live at `public/images/services/{service-id}.png` where `{service-id}` matches `ServiceId` in `src/lib/content/services.ts`.

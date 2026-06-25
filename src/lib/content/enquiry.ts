@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import {
+  getServiceImage,
   servicesContent,
   type ServiceId,
   type ServiceItem,
@@ -77,10 +78,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       tagline: "Daily help across cleaning, kitchen, and errands",
       description:
         "Ideal when you need one reliable person for everyday household tasks — flexible hours, matched to your routine.",
-      image: {
-        src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80&auto=format&fit=crop",
-        alt: "Tidy, welcoming family living space",
-      },
+      image: getServiceImage("all-rounder"),
       highlights: servicesContent.items.find((s) => s.id === "all-rounder")!
         .highlights,
       details: [
@@ -96,10 +94,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       tagline: "Fresh meals and a well-kept kitchen",
       description:
         "For families who want daily cooking support — tell us your meal preferences and we'll find someone comfortable in your kitchen.",
-      image: {
-        src: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200&q=80&auto=format&fit=crop",
-        alt: "Home kitchen with fresh ingredients",
-      },
+      image: getServiceImage("cooking"),
       highlights: servicesContent.items.find((s) => s.id === "cooking")!
         .highlights,
       details: [
@@ -115,10 +110,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       tagline: "Safe, attentive care at home",
       description:
         "When you need a caregiver who understands feeding, playtime, and daily routines — matched for your child's age and schedule.",
-      image: {
-        src: "https://images.unsplash.com/photo-1515488042361-ee00e8170dc8?w=1200&q=80&auto=format&fit=crop",
-        alt: "Calm nursery setting for child care",
-      },
+      image: getServiceImage("babycare"),
       highlights: servicesContent.items.find((s) => s.id === "babycare")!
         .highlights,
       details: [
@@ -133,10 +125,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       tagline: "Specialist care for mother and newborn",
       description:
         "Post-delivery support for mother and baby — bathing, feeding assistance, rest for the mother, and attentive newborn care at home.",
-      image: {
-        src: "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=1200&q=80&auto=format&fit=crop",
-        alt: "Gentle newborn and mother care at home",
-      },
+      image: getServiceImage("japa"),
       highlights: servicesContent.items.find((s) => s.id === "japa")!.highlights,
       details: [
         { icon: HeartHandshake, label: "Mother rest & recovery support" },
@@ -151,10 +140,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       tagline: "Deep cleaning and household upkeep",
       description:
         "For homes that need thorough cleaning, laundry, and organisation — scheduled around your week.",
-      image: {
-        src: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=1200&q=80&auto=format&fit=crop",
-        alt: "Well-organised, clean home interior",
-      },
+      image: getServiceImage("housemaid"),
       highlights: servicesContent.items.find((s) => s.id === "housemaid")!
         .highlights,
       details: [

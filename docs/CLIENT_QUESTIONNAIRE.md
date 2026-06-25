@@ -38,7 +38,7 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 | ✓ | Enquiries to | Ankush — primary WhatsApp number |
 | ✓ | Form submit | Email to Ankushhanry@icloud.com |
 | ✓ | Logo | No image — text logo **Premium Maid Service** (as built) |
-| ✓ | Brand colours | Keep current site palette (teal primary, clean white) |
+| ✓ | Brand colours | Warm coral primary `#E0654D`, off-white background `#F9FAF8` |
 | ✓ | Hero headline | **"Reliable help for your Home"** + existing supporting copy |
 | ✓ | Pricing on site | **No** — enquiry only ("Contact us for rates") |
 

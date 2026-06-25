@@ -33,18 +33,21 @@ Nav: `Home | Services | How It Works | Why Us | Reviews | Book Now` + Call/Whats
 
 Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 
-## Design tokens (draft)
+## Design tokens (from `src/app/globals.css`)
 
 | Role | Hex |
 |------|-----|
-| Primary | `#0F4C5C` or `#1E3A5F` |
-| Accent | `#C9A227` or `#2D6A4F` |
-| Background | `#FAFAF8` |
-| Text | `#1A1A1A` |
-| Muted | `#6B7280` |
+| Primary | `#E0654D` |
+| Primary foreground | `#FFFAF8` |
+| Background | `#F9FAF8` |
+| Foreground (text) | `#1A211F` |
+| Muted | `#EEF2F0` |
+| Muted foreground | `#5C6B66` |
+| Border | `#D8E0DC` |
+| Accent | 12% primary mixed into background |
 
 - Light theme only — no dark mode
-- Headings: DM Sans or Plus Jakarta Sans
+- Headings: Plus Jakarta Sans
 - Hindi: Noto Sans Devanagari
 - Mobile-first, large tap targets, minimal JS
 

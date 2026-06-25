@@ -26,19 +26,47 @@ export type ServiceHighlight = {
   label: string;
 };
 
+export type ServiceImage = {
+  src: string;
+  alt: string;
+};
+
 export type ServiceItem = {
   id: ServiceId;
   name: string;
+  image: ServiceImage;
   highlights: readonly ServiceHighlight[];
   featured?: {
     label: string;
   };
 };
 
-export const servicesSharedImage = {
-  src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80&auto=format&fit=crop",
-  alt: "Warm, well-kept family home",
-} as const;
+export const serviceImages = {
+  "all-rounder": {
+    src: "/images/services/all-rounder.png",
+    alt: "All-rounder maid tidying a living room in an Indian home",
+  },
+  cooking: {
+    src: "/images/services/cooking.png",
+    alt: "Cooking maid preparing food in an Indian kitchen",
+  },
+  babycare: {
+    src: "/images/services/babycare.png",
+    alt: "Babycare helper with a child in a comfortable Indian home",
+  },
+  japa: {
+    src: "/images/services/japa.png",
+    alt: "Japa maid providing newborn and mother care at home",
+  },
+  housemaid: {
+    src: "/images/services/housemaid.png",
+    alt: "Housemaid cleaning and organising a home in Delhi NCR",
+  },
+} as const satisfies Record<ServiceId, ServiceImage>;
+
+export function getServiceImage(id: ServiceId) {
+  return serviceImages[id];
+}
 
 export const servicesContent = {
   title: "Help for your home",
@@ -53,6 +81,7 @@ export const servicesContent = {
     {
       id: "all-rounder",
       name: "All-rounder",
+      image: serviceImages["all-rounder"],
       highlights: [
         { icon: Sparkles, label: "Cleaning" },
         { icon: UtensilsCrossed, label: "Kitchen" },
@@ -63,6 +92,7 @@ export const servicesContent = {
     {
       id: "cooking",
       name: "Cooking maid",
+      image: serviceImages.cooking,
       highlights: [
         { icon: Soup, label: "Daily meals" },
         { icon: ChefHat, label: "Kitchen care" },
@@ -73,6 +103,7 @@ export const servicesContent = {
     {
       id: "babycare",
       name: "Babycare",
+      image: serviceImages.babycare,
       highlights: [
         { icon: Baby, label: "Child care" },
         { icon: Home, label: "At home" },
@@ -82,6 +113,7 @@ export const servicesContent = {
     {
       id: "japa",
       name: "Japa maid",
+      image: serviceImages.japa,
       highlights: [
         { icon: HeartHandshake, label: "Mother care" },
         { icon: Bath, label: "Newborn" },
@@ -92,6 +124,7 @@ export const servicesContent = {
     {
       id: "housemaid",
       name: "Housemaid",
+      image: serviceImages.housemaid,
       highlights: [
         { icon: Sparkles, label: "Deep clean" },
         { icon: Shirt, label: "Laundry" },

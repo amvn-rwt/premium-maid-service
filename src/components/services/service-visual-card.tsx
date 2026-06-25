@@ -4,7 +4,6 @@ import { ArrowUpRight } from "lucide-react";
 
 import {
   getServiceEnquireHref,
-  servicesSharedImage,
   type ServiceItem,
 } from "@/lib/content/services";
 import { cn } from "@/lib/utils";
@@ -34,7 +33,7 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
         )}
       >
         <Image
-          src={servicesSharedImage.src}
+          src={service.image.src}
           alt=""
           aria-hidden
           fill

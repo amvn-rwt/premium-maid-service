@@ -89,7 +89,7 @@ These must be confirmed on the discovery call before build starts.
 
 ### Technical & content
 
-27. Do you have a **logo** and **brand colors**? If not, any preference (green/teal, navy/gold, etc.)?
+27. Do you have a **logo** and **brand colors**? ✅ Logo locked (text); colours locked — warm coral `#E0654D` on off-white.
 28. Social media links? (Instagram, Facebook — often important for local trust.)
 29. Need **Hindi** content, **English**, or both?
 30. Timeline: when do they need the site live?
@@ -272,21 +272,24 @@ Reduce friction and support calls. Suggested questions:
 | [Neelam Maid Services](https://neelammaidservices.in/) | Practical form + location focus |
 | [Maid Marines](https://www.maidmarines.com/) | Minimal layout, booking-first |
 
-### Color palette (draft — confirm with client)
+### Color palette (locked — see `src/app/globals.css`)
 
-| Role | Suggestion | Hex (starting point) |
-|------|------------|----------------------|
-| Primary | Deep teal or navy | `#0F4C5C` or `#1E3A5F` |
-| Accent | Warm gold or soft green | `#C9A227` or `#2D6A4F` |
-| Background | Off-white | `#FAFAF8` |
-| Text | Dark gray | `#1A1A1A` |
-| Muted text | Gray | `#6B7280` |
+| Role | Description | Hex |
+|------|-------------|-----|
+| Primary | Warm coral | `#E0654D` |
+| Primary foreground | Off-white (on primary buttons) | `#FFFAF8` |
+| Background | Warm off-white | `#F9FAF8` |
+| Foreground (text) | Dark green-charcoal | `#1A211F` |
+| Muted | Light gray-green | `#EEF2F0` |
+| Muted foreground | Mid gray-green | `#5C6B66` |
+| Border | Soft gray-green | `#D8E0DC` |
+| Accent | 12% primary mixed into background | derived |
 
 Avoid dark themes — they conflict with “clean home services” perception.
 
 ### Typography
 
-- **Headings:** Clean sans-serif (e.g. DM Sans, Plus Jakarta Sans, or similar)  
+- **Headings:** Plus Jakarta Sans (bold)  
 - **Body:** Readable sans-serif, 16–18px on mobile  
 - **Hindi (if needed):** Noto Sans Devanagari or system fallback  
 
@@ -334,7 +337,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 
 - [ ] Business legal name and tagline  
 - [ ] Logo (SVG or PNG)  
-- [ ] Brand colors (or approval of draft palette)  
+- [x] Brand colors — warm coral `#E0654D` on off-white (locked in `globals.css`)  
 - [x] Phone numbers — **7428127908**, **9871439287** (WhatsApp same or separate — confirm on next call)  
 - [ ] Email for enquiries  
 - [ ] Office address and hours  
@@ -436,7 +439,7 @@ Still to confirm: main button wording (Q8 — using "Enquire Now"); photos (Sect
 | Item | Answer |
 |------|--------|
 | Logo | None — keep text logo as built |
-| Colours | Keep current site colours |
+| Colours | Warm coral `#E0654D` primary, off-white background (as built) |
 | Hero | Keep headline and copy already written |
 
 ### Client answers — Section C (WhatsApp, Ankush)
