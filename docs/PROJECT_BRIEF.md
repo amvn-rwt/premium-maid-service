@@ -158,10 +158,9 @@ On mobile: hamburger menu + **sticky bottom bar** with Call and WhatsApp.
 
 Five cards — one per service. Each card:
 
-- Icon or small image
-- Service name
-- 3–4 bullet benefits
-- “Enquire for this service” link (scrolls to form, pre-selects service)
+- Image with service name + highlight chips
+- Clicking a card opens a **premium detail modal** (backdrop blur, smooth scale/fade animation, close icon) with a comprehensive breakdown: overview, "what this help covers", and "good to know"
+- The modal CTA "Enquire about {service}" closes the modal, pre-selects the service in the enquiry form, and smooth-scrolls to it; a WhatsApp shortcut is also offered
 
 | Service | Sample bullets (customize after client call) |
 |---------|-----------------------------------------------|

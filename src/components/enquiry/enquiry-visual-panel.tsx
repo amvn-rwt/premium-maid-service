@@ -25,7 +25,7 @@ function EnquiryVisualPanelContent({
   return (
     <div
       className={cn(
-        "relative aspect-4/5 w-full overflow-hidden lg:aspect-[3/2]",
+        "relative aspect-4/5 w-full overflow-hidden lg:aspect-3/2",
         isFeatured && "ring-1 ring-inset ring-primary/35",
       )}
     >
@@ -68,7 +68,11 @@ function EnquiryVisualPanelContent({
               key={label}
               className="inline-flex items-center gap-1.5 rounded-full bg-background/12 px-2.5 py-1 text-background/90"
             >
-              <Icon className="size-3.5 shrink-0" strokeWidth={1.75} aria-hidden />
+              <Icon
+                className="size-3.5 shrink-0"
+                strokeWidth={1.75}
+                aria-hidden
+              />
               <span className="text-xs font-medium">{label}</span>
             </li>
           ))}

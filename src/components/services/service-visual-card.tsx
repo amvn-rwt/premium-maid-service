@@ -1,32 +1,36 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-import {
-  getServiceEnquireHref,
-  type ServiceItem,
-} from "@/lib/content/services";
+import { type ServiceItem } from "@/lib/content/services";
 import { cn } from "@/lib/utils";
 
 type ServiceVisualCardProps = {
   service: ServiceItem;
+  onSelect: (service: ServiceItem) => void;
   className?: string;
 };
 
-export function ServiceVisualCard({ service, className }: ServiceVisualCardProps) {
+export function ServiceVisualCard({
+  service,
+  onSelect,
+  className,
+}: ServiceVisualCardProps) {
   const isFeatured = Boolean(service.featured);
 
   return (
-    <Link
-      href={getServiceEnquireHref(service.id)}
+    <button
+      type="button"
+      onClick={() => onSelect(service)}
       className={cn(
-        "group relative z-0 flex w-70 shrink-0 snap-start flex-col overflow-hidden rounded-[1.35rem] sm:w-75",
+        "group relative z-0 flex w-70 shrink-0 cursor-pointer snap-start flex-col overflow-hidden rounded-[1.35rem] text-left sm:w-75",
         "transform-gpu transition-transform duration-400 ease-enter will-change-transform",
         "motion-safe:hover:z-10 motion-safe:hover:scale-[1.02] motion-safe:active:scale-[0.99]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground/30 focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         className,
       )}
-      aria-label={`Enquire about ${service.name}`}
+      aria-label={`View details about ${service.name}`}
     >
       <div
         className={cn(
@@ -42,7 +46,7 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
           quality={85}
           sizes="(max-width: 640px) 70vw, 300px"
           className={cn(
-            "object-cover",
+            "object-cover transition-transform duration-500 ease-enter motion-safe:group-hover:scale-[1.04]",
             isFeatured ? "brightness-[0.92]" : "brightness-[0.97]",
           )}
         />
@@ -88,6 +92,6 @@ export function ServiceVisualCard({ service, className }: ServiceVisualCardProps
           </ul>
         </div>
       </div>
-    </Link>
+    </button>
   );
 }

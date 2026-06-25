@@ -1,7 +1,7 @@
 import { ArrowLeftRight } from "lucide-react";
 import Link from "next/link";
 
-import { ServiceVisualCard } from "@/components/services/service-visual-card";
+import { ServicesCarousel } from "@/components/services/services-carousel";
 import { servicesContent } from "@/lib/content/services";
 
 const {
@@ -9,7 +9,6 @@ const {
   titleAccent,
   description,
   scrollHint,
-  items,
   footerNote,
   footerCta,
   footerCtaHref,
@@ -46,14 +45,7 @@ export function ServicesSection() {
           <span>{scrollHint}</span>
         </p>
 
-        <div
-          className="-mx-3 mt-1 flex min-w-0 snap-x snap-mandatory gap-4 overflow-x-auto scroll-px-3 px-3 py-3 [-ms-overflow-style:none] scrollbar-none sm:mt-2 sm:gap-5 [&::-webkit-scrollbar]:hidden"
-          role="list"
-        >
-          {items.map((service) => (
-            <ServiceVisualCard key={service.id} service={service} />
-          ))}
-        </div>
+        <ServicesCarousel />
 
         <p className="mt-8 text-sm text-muted-foreground">
           {footerNote}{" "}

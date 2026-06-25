@@ -28,6 +28,51 @@
   --nav-overlay-open-dur: 250ms;
   --nav-overlay-close-dur: 180ms;
 
+  --animate-modal-overlay-in: modal-overlay-in 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-modal-overlay-out: modal-overlay-out 220ms cubic-bezier(0.25, 1, 0.5, 1) both;
+  --animate-modal-panel-in: modal-panel-in 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-modal-panel-out: modal-panel-out 240ms cubic-bezier(0.25, 1, 0.5, 1) both;
+
+  @keyframes modal-overlay-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes modal-overlay-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes modal-panel-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px) scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes modal-panel-out {
+    from {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+  }
+
   @keyframes pill-cta-icon-wiggle {
     0%,
     34%,
