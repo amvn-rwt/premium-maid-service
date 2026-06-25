@@ -55,7 +55,7 @@ export function HeroCopy() {
         {heroContent.supporting}
       </p>
 
-      <div className="mt-8 flex w-full flex-nowrap items-center justify-center gap-2 px-4 sm:gap-3 sm:px-0 lg:justify-start">
+      <div className="mt-8 flex w-full flex-wrap items-center justify-center gap-2 sm:gap-3 lg:justify-start">
         <PillCtaButton
           href={heroContent.ctaHref}
           size="sm"
