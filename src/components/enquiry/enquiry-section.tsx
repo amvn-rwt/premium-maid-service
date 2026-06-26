@@ -34,6 +34,16 @@ export function EnquirySection() {
   useEffect(() => {
     setServiceId(getInitialServiceId());
 
+    // A compound deep link (#enquire?service=x) isn't a valid scroll target, so
+    // the browser leaves the page at the top. Scroll to the form ourselves.
+    // The bare home route (no service hash) is intentionally left untouched.
+    if (parseServiceIdFromHash(window.location.hash)) {
+      const sectionEl = document.getElementById(sectionAnchors.enquire.slice(1));
+      requestAnimationFrame(() => {
+        sectionEl?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
     const handleHashChange = () => {
       setServiceId(
         parseServiceIdFromHash(window.location.hash) ?? defaultEnquiryServiceId,

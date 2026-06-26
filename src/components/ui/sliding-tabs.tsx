@@ -109,10 +109,15 @@ function SlidingTabs<T extends string>({
     const scrollEl = scrollRef.current;
     if (!activeTab || !scrollEl) return;
 
-    activeTab.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest",
-      inline: "center",
+    // Center the active tab within the horizontal strip by scrolling the strip
+    // itself. `scrollIntoView` would scroll every scrollable ancestor including
+    // the document, which on mount yanks the whole page down to the tabs.
+    const target =
+      activeTab.offsetLeft - (scrollEl.clientWidth - activeTab.offsetWidth) / 2;
+    const maxLeft = scrollEl.scrollWidth - scrollEl.clientWidth;
+    scrollEl.scrollTo({
+      left: Math.max(0, Math.min(target, maxLeft)),
+      behavior: interactionRef.current === "keyboard" ? "auto" : "smooth",
     });
 
     updateIndicator();

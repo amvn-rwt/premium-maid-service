@@ -4,6 +4,7 @@ import { siteConfig } from "@/lib/site";
 import {
   getServiceEnquireHref,
   servicesContent,
+  type ServiceId,
 } from "@/lib/content/services";
 
 export const footerContent = {
@@ -39,4 +40,5 @@ export const footerNavLinks = [
 export const footerServiceLinks = servicesContent.items.map((service) => ({
   label: service.name,
   href: getServiceEnquireHref(service.id),
-})) as readonly { label: string; href: string }[];
+  serviceId: service.id,
+})) as readonly { label: string; href: string; serviceId: ServiceId }[];

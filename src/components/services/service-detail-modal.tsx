@@ -15,22 +15,17 @@ import {
 import { HighlightLabel } from "@/components/ui/highlight-label";
 import { getPrimaryWhatsAppHref } from "@/lib/contact";
 import { getEnquiryServiceContent } from "@/lib/content/enquiry";
-import { sectionAnchors } from "@/lib/content/nav";
 import {
   getServiceDetailContent,
   serviceDetailModalContent,
 } from "@/lib/content/service-details";
-import {
-  getServiceEnquireHref,
-  type ServiceId,
-} from "@/lib/content/services";
+import type { ServiceId } from "@/lib/content/services";
+import { navigateToEnquiry } from "@/lib/enquiry/navigate-to-enquiry";
 
 type ServiceDetailModalProps = {
   serviceId: ServiceId | null;
   onClose: () => void;
 };
-
-const enquireAnchorId = sectionAnchors.enquire.slice(1);
 
 export function ServiceDetailModal({
   serviceId,
@@ -52,43 +47,11 @@ export function ServiceDetailModal({
   const handleEnquire = useCallback(() => {
     if (!renderedId) return;
     const id = renderedId;
-    const href = getServiceEnquireHref(id);
-
-    const applyService = () => {
-      if (window.location.hash !== href) {
-        window.history.replaceState(null, "", href);
-      }
-      window.dispatchEvent(new HashChangeEvent("hashchange"));
-    };
 
     onClose();
-
-    // Let the dialog finish closing (exit animation + scroll-lock release)
-    // before scrolling, then defer the service swap until the scroll settles.
-    // Swapping mid-scroll runs the panel's crossfade + reveals while the page
-    // is moving, which caused the visible jitter.
-    window.setTimeout(() => {
-      const target = document.getElementById(enquireAnchorId);
-
-      if (!target) {
-        applyService();
-        return;
-      }
-
-      let settled = false;
-      const settle = () => {
-        if (settled) return;
-        settled = true;
-        window.clearTimeout(fallback);
-        window.removeEventListener("scrollend", settle);
-        applyService();
-      };
-
-      const fallback = window.setTimeout(settle, 800);
-      window.addEventListener("scrollend", settle);
-
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 260);
+    // Wait for the dialog to finish closing (exit animation + scroll-lock
+    // release) before scrolling to the form.
+    navigateToEnquiry(id, { delay: 260 });
   }, [renderedId, onClose]);
 
   const content = renderedId ? getEnquiryServiceContent(renderedId) : null;

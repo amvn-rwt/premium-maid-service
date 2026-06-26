@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { EnquireServiceLink } from "@/components/enquiry/enquire-service-link";
 import { FooterCopyright } from "@/components/footer-copyright";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { Logo } from "@/components/logo";
@@ -111,11 +112,24 @@ export function Footer() {
               aria-label="Footer navigation"
             />
 
-            <FooterLinkColumn
-              heading={servicesHeading}
-              links={footerServiceLinks}
-              aria-label="Footer services"
-            />
+            <nav aria-label="Footer services">
+              <h3 className="text-sm font-semibold text-background">
+                {servicesHeading}
+              </h3>
+              <ul className="mt-4 flex flex-col gap-2">
+                {footerServiceLinks.map(({ label, href, serviceId }) => (
+                  <li key={href}>
+                    <EnquireServiceLink
+                      href={href}
+                      serviceId={serviceId}
+                      className="text-sm text-background/70 transition-colors hover:text-background"
+                    >
+                      {label}
+                    </EnquireServiceLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
 
             <div className="col-span-2 sm:col-span-1">
               <h3 className="text-sm font-semibold text-background">
