@@ -151,7 +151,7 @@ function SlidingTabs<T extends string>({
   };
 
   return (
-    <div className={cn("min-w-0", className)}>
+    <div className={cn("relative min-w-0", className)}>
       <div
         ref={scrollRef}
         className="overflow-x-auto [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden"
@@ -195,11 +195,6 @@ function SlidingTabs<T extends string>({
 
           <span
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-px bg-border/70"
-          />
-
-          <span
-            aria-hidden
             className={cn(
               "pointer-events-none absolute bottom-0 left-0 z-10 h-0.5 rounded-full bg-primary",
               "motion-safe:transition-[left,width,opacity] motion-safe:ease-move motion-reduce:transition-none",
@@ -213,6 +208,11 @@ function SlidingTabs<T extends string>({
           />
         </div>
       </div>
+
+      <span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-0 h-px bg-border/70"
+      />
     </div>
   );
 }
