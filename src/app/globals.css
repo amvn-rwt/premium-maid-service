@@ -145,15 +145,14 @@
     transition-delay: var(--reveal-delay, 0ms);
   }
 
-  .reveal-media {
+  /* A stacked image layer that crossfades in over the previous one, so the
+     photo never drops out to the dark backdrop between services. */
+  .backdrop-layer {
     opacity: 1;
     transform: scale(1);
-    filter: blur(0);
     transition:
-      opacity 520ms var(--ease-enter),
-      transform 640ms var(--ease-enter),
-      filter 520ms var(--ease-enter);
-    transition-delay: var(--reveal-delay, 0ms);
+      opacity 600ms var(--ease-enter),
+      transform 700ms var(--ease-enter);
   }
 
   @starting-style {
@@ -162,16 +161,15 @@
       transform: translateY(10px);
     }
 
-    .reveal-media {
+    .backdrop-layer {
       opacity: 0;
-      transform: scale(1.04);
-      filter: blur(6px);
+      transform: scale(1.03);
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
     .reveal,
-    .reveal-media {
+    .backdrop-layer {
       transition: none;
     }
   }
