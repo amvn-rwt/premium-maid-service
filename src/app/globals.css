@@ -131,3 +131,48 @@
     @apply font-bold;
   }
 }
+
+@layer components {
+  /* Content-swap entrance for the enquiry visual panel. Driven by
+     `@starting-style`, so it only plays when React (re)inserts the node on a
+     service change — never on the SSR'd initial paint. */
+  .reveal {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+      opacity 380ms var(--ease-enter),
+      transform 380ms var(--ease-enter);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .reveal-media {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    transition:
+      opacity 520ms var(--ease-enter),
+      transform 640ms var(--ease-enter),
+      filter 520ms var(--ease-enter);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  @starting-style {
+    .reveal {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    .reveal-media {
+      opacity: 0;
+      transform: scale(1.04);
+      filter: blur(6px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal-media {
+      transition: none;
+    }
+  }
+}

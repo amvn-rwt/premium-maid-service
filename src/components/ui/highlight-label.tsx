@@ -3,11 +3,12 @@ import { cn } from "@/lib/utils";
 type HighlightLabelProps = {
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 };
 
-function HighlightLabel({ children, className }: HighlightLabelProps) {
+function HighlightLabel({ children, className, style }: HighlightLabelProps) {
   return (
-    <p className={cn("text-sm font-semibold", className)}>
+    <p className={cn("text-sm font-semibold", className)} style={style}>
       <span className="relative inline-block text-primary">
         <span className="relative z-10">{children}</span>
         <span
