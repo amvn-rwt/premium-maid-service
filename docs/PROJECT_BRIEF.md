@@ -183,16 +183,17 @@ Copy/summaries live in `src/lib/content/how-it-works.ts`; visuals in `src/compon
 
 ### 5.4 Why choose us / trust section
 
-Implemented as a bento grid: a 2×2 set of circular-icon cards (left two columns on desktop) plus one tall dark featured information card (coral glow accent, no CTA button) in the third column. Icon-based by design — no client photos used here, so nothing depends on pending D7 assets.
+Implemented as a balanced asymmetric **all-dark** bento (every tile uses the dark `--foreground` surface with coral accents): a **tall featured tile** on the left + a **2×2 set of tiles** on the right (no empty/oversized bottom bar). Each tile presents info a **different** way, scanning-first, with two short paragraphs:
 
-Current points (only confirmed, non-claim statements):
+Every card carries a short text line for context; small in-card icons are bare (no circle), circles are reserved for the heading icons only:
 
-- **Delhi NCR focused** (MapPin) — placements across the region
-- **Flexible arrangements** (CalendarClock) — full-time, part-time, live-in, 24-hour
-- **All key services** (Users) — maids, cooks, babysitters, Japa maids, house help
-- **Easy to reach** (MessagesSquare) — form, call, or WhatsApp
+- **Featured** (tall) — coral-glow headline + 2–3 line paragraph + hours footnote (no CTA button)
+- **All key services** (Users) — text line + icon **chips**: Maids (SprayCan), Cooks, Babysitters, Japa maids, House help
+- **Service area** — **stat-style** card: large “Delhi NCR” + a 2-line paragraph naming core NCR cities (no fabricated metric)
+- **Flexible timings** (Clock) — text line + **icon+label rows** (2×2): Full-time, Part-time, Live-in, 24-hour
+- **Easy to reach** (MessagesSquare) — text line (working hours) + **icon+label rows**: Enquiry form, Call us, WhatsApp
 
-Featured card copy + the points live in `src/lib/content/why-us.ts`; layout in `src/components/why-us/why-us-section.tsx`. Do **not** add “background-verified”, years-in-business, response-time, replacement-guarantee, or stats (`500+ Placements`, ratings) until those are confirmed (see D8/D9).
+Icon/text-based by design — no client photos, so nothing depends on pending D7 assets. Featured copy + points live in `src/lib/content/why-us.ts` (each point declares a `kind: "chips" | "iconList" | "stat"` discriminant); layout in `src/components/why-us/why-us-section.tsx`. Do **not** add “background-verified”, years-in-business, response-time, replacement-guarantee, or invented stats (`500+ Placements`, ratings) until confirmed (see D8/D9).
 
 ### 5.5 Testimonials
 
