@@ -80,11 +80,9 @@ export function WhyUsSection() {
               </p>
             </div>
 
-            <div className="relative mt-8 border-t border-background/10 pt-5">
-              <p className="text-xs font-medium tracking-wide text-background/55 uppercase">
-                {featured.note}
-              </p>
-            </div>
+            <p className="relative mt-8 text-xs font-medium tracking-wide text-background/55 uppercase">
+              {featured.note}
+            </p>
           </li>
         </ul>
       </div>
