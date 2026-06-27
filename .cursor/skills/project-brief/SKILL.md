@@ -6,7 +6,7 @@ description: >-
   site. Covers site structure, design direction, tech stack, and v1 scope.
 ---
 
-# Premium Maid Service — Project Brief
+# Premium Maid Service: Project Brief
 
 ## First step
 
@@ -17,7 +17,7 @@ Read `docs/PROJECT_BRIEF.md` before significant work. It is the source of truth.
 | Field | Value |
 |-------|-------|
 | Business | Premium Maid Service |
-| Goal | Lead generation — form, call, WhatsApp |
+| Goal | Lead generation: form, call, WhatsApp |
 | Area | Delhi NCR |
 | Languages | English only |
 | Phones | +91 7428127908, +91 98714 39287 |
@@ -48,7 +48,7 @@ Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 | Border | `#D8E0DC` |
 | Accent | 12% primary mixed into background |
 
-- Light theme only — no dark mode
+- Light theme only: no dark mode
 - Headings: Plus Jakarta Sans
 - Mobile-first, large tap targets, minimal JS
 
@@ -59,12 +59,12 @@ Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 - Deploy: Vercel or Netlify
 - SEO: meta tags, Open Graph, LocalBusiness JSON-LD
 
-## Reference sites (patterns only — do not copy)
+## Reference sites (patterns only: do not copy)
 
-- Maidvy — service categories, enquiry flow
-- ApnaDuty — trust bullets per service
-- Neelam Maid Services — form + location focus
-- Maid Marines — minimal, booking-first
+- Maidvy: service categories, enquiry flow
+- ApnaDuty: trust bullets per service
+- Neelam Maid Services: form + location focus
+- Maid Marines: minimal, booking-first
 
 ## Out of scope
 

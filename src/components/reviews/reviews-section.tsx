@@ -1,4 +1,4 @@
-// Reviews section — commented out until real testimonials are available.
+// Reviews section: commented out until real testimonials are available.
 // Uncomment this file and restore imports in page.tsx, nav.ts, footer.ts, reviews.ts.
 
 /*

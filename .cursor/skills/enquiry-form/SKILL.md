@@ -17,7 +17,7 @@ Full-width section before footer. Every "Book" / "Enquire" CTA scrolls here and 
 | Field | Type | Validation |
 |-------|------|------------|
 | Full name | text | Required |
-| Phone | tel | Required — 10-digit Indian mobile (`^[6-9]\d{9}$`) |
+| Phone | tel | Required: 10-digit Indian mobile (`^[6-9]\d{9}$`) |
 | City / area | text or select | Default context: Delhi NCR |
 | Service needed | select | All-rounder, Cook, Babycare, Japa, Housemaid |
 | Work type | select | Full-time, Part-time, Live-in, 24 hours |

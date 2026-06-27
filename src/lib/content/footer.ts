@@ -11,7 +11,7 @@ export const footerContent = {
   cta: {
     tagline: "Ready for reliable help at home?",
     supporting:
-      "Share your requirements — we'll respond by call or WhatsApp.",
+      "Share your requirements and we'll respond by call or WhatsApp.",
     primaryLabel: heroContent.cta,
     primaryHref: sectionAnchors.enquire,
     whatsappLabel: "WhatsApp Us",

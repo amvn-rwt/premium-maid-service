@@ -40,7 +40,7 @@ export const serviceDetailModalContent = {
 export const serviceDetailsContent: Record<ServiceId, ServiceDetailContent> = {
   "all-rounder": {
     overview:
-      "One dependable person to keep your whole home running — cleaning, kitchen support, and the small daily tasks that add up. We match you with someone who fits your routine and stays consistent over time.",
+      "One dependable person to keep your whole home running: cleaning, kitchen support, and the small daily tasks that add up. We match you with someone who fits your routine and stays consistent over time.",
     includedLabel: "What this help covers",
     included: [
       {
@@ -69,7 +69,7 @@ export const serviceDetailsContent: Record<ServiceId, ServiceDetailContent> = {
     goodToKnowLabel: "Good to know",
     goodToKnow: [
       "Best for homes that want one consistent helper for everyday tasks.",
-      "The work scope is agreed with you up front — no surprises.",
+      "The work scope is agreed with you up front, with no surprises.",
       "Available as full-time, part-time, or live-in.",
     ],
   },
@@ -81,7 +81,7 @@ export const serviceDetailsContent: Record<ServiceId, ServiceDetailContent> = {
       {
         icon: Soup,
         title: "Daily meal prep",
-        description: "Breakfast, lunch, or dinner — cooked fresh to your taste.",
+        description: "Breakfast, lunch, or dinner, cooked fresh to your taste.",
       },
       {
         icon: ChefHat,
@@ -91,7 +91,7 @@ export const serviceDetailsContent: Record<ServiceId, ServiceDetailContent> = {
       {
         icon: UtensilsCrossed,
         title: "Cuisine to match",
-        description: "Veg, non-veg, or both — regional preferences welcome.",
+        description: "Veg, non-veg, or both. Regional preferences welcome.",
       },
       {
         icon: Clock3,

@@ -1,5 +1,5 @@
 /**
- * Confirmed business details — update when client answers land in
+ * Confirmed business details. Update when client answers land in
  * docs/CLIENT_QUESTIONNAIRE.md.
  */
 export const siteConfig = {

@@ -98,7 +98,7 @@ export function ServiceDetailModal({
               ) : null}
 
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
-                <HighlightLabel>
+                <HighlightLabel className="hidden sm:block">
                   {serviceDetailModalContent.enquiringLabel}
                 </HighlightLabel>
                 <DialogTitle className="mt-1 text-xl font-semibold tracking-tight text-background sm:mt-1.5 sm:text-3xl">

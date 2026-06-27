@@ -137,7 +137,7 @@
 @layer components {
   /* Content-swap entrance for the enquiry visual panel. Driven by
      `@starting-style`, so it only plays when React (re)inserts the node on a
-     service change — never on the SSR'd initial paint. */
+     service change; never on the SSR'd initial paint. */
   .reveal {
     opacity: 1;
     transform: translateY(0);

@@ -20,7 +20,7 @@ export async function submitEnquiry(
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({
       access_key: accessKey,
-      subject: `New enquiry — ${siteConfig.name}`,
+      subject: `New enquiry: ${siteConfig.name}`,
       from_name: values.name,
       name: values.name,
       phone: values.phone,

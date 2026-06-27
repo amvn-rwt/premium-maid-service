@@ -55,7 +55,7 @@ export const whyUsContent = {
     eyebrow: "Built around your needs",
     title: "Find the right help for your home",
     description:
-      "Tell us what you need and we'll shortlist suitable candidates for your service, timing, and area — then meet them at home and decide, with no pressure to commit.",
+      "Tell us what you need and we'll shortlist suitable candidates for your service, timing, and area, then meet them at home and decide, with no pressure to commit.",
     note: `${siteConfig.serviceArea} · ${siteConfig.contact.hours.summary}`,
   },
   points: [
@@ -88,7 +88,7 @@ export const whyUsContent = {
       kind: "stat",
       eyebrow: "Service area",
       stat: "Delhi NCR",
-      text: "Across Delhi, Gurugram, Noida, Ghaziabad and nearby — just share your locality when you enquire.",
+      text: "Across Delhi, Gurugram, Noida, Ghaziabad and nearby. Just share your locality when you enquire.",
     },
     {
       kind: "iconList",

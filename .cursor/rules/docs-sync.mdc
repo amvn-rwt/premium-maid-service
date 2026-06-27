@@ -23,12 +23,12 @@ When you **create, update, or delete** anything on the website, check whether do
 
 1. Make the site change.
 2. Scan the table above for affected doc files.
-3. Update docs in the **same task** — do not defer unless the user explicitly asked for code-only.
+3. Update docs in the **same task**: do not defer unless the user explicitly asked for code-only.
 4. If a doc value is duplicated in multiple places, update **all** of them (especially `open-decisions.mdc` and `PROJECT_BRIEF.md`).
 
 ## Rules
 
-- **Code wins** — if docs and `src/` disagree, fix the docs to match the live site.
+- **Code wins**: if docs and `src/` disagree, fix the docs to match the live site.
 - **Do not invent** client facts in docs; only record confirmed values (see `open-decisions.mdc`).
 - **Skip trivial UI tweaks** (spacing, hover states) unless the brief explicitly documents that detail.
 - **Mention doc updates** in your summary when you changed both code and docs.

@@ -22,7 +22,7 @@ export const howItWorksContent = {
   title: "How it works",
   titleAccent: "four simple steps",
   description:
-    "From first enquiry to placement — a clear process so you know what to expect.",
+    "From first enquiry to placement: a clear process so you know what to expect.",
   steps: [
     {
       step: "1",

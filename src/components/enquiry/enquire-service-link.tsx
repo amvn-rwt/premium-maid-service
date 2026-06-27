@@ -16,7 +16,7 @@ type EnquireServiceLinkProps = {
 /**
  * A footer/service link that smooth-scrolls to the enquiry form and selects the
  * service. The `#enquire?service=x` href is kept for no-JS / new-tab use, but on
- * a normal click we handle the scroll ourselves — otherwise the browser can't
+ * a normal click we handle the scroll ourselves. Otherwise the browser can't
  * resolve the compound hash and scrolls to the top of the page.
  */
 export function EnquireServiceLink({

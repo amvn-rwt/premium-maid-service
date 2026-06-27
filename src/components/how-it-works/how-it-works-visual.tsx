@@ -83,7 +83,7 @@ function EnquiryVisual() {
           Need a full-time cook 🙏
         </p>
         <p className="mr-auto flex max-w-[88%] items-end gap-1.5 rounded-2xl rounded-bl-sm bg-background px-3 py-2 text-xs leading-snug text-foreground ring-1 ring-foreground/8">
-          On it — sharing matched profiles!
+          On it! Sharing matched profiles!
           <CheckCheck className="size-3 shrink-0 text-emerald-600" />
         </p>
       </div>

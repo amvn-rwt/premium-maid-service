@@ -14,7 +14,7 @@ type NavigateToEnquiryOptions = {
  * The service is applied only once the scroll settles (`scrollend`), so the
  * panel's crossfade + reveal entrance plays after arrival instead of competing
  * with the scroll. Needed because `#enquire?service=x` is not a real scroll
- * target — left to the browser it scrolls to the top of the page.
+ * target. Left to the browser it scrolls to the top of the page.
  */
 export function navigateToEnquiry(
   serviceId: ServiceId,

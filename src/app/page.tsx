@@ -12,7 +12,7 @@ export default function HomePage() {
       <ServicesSection />
       <HowItWorksSection />
       <WhyUsSection />
-      {/* <ReviewsSection /> — uncomment when real testimonials are available */}
+      {/* <ReviewsSection />: uncomment when real testimonials are available */}
       <EnquirySection />
     </main>
   );

@@ -1,5 +1,5 @@
 ---
-description: Client decisions — use confirmed values, placeholders for pending items
+description: Client decisions: use confirmed values, placeholders for pending items
 alwaysApply: true
 ---
 
@@ -13,26 +13,26 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 |------|-------|
 | Service area | Delhi NCR |
 | Languages | English only |
-| Primary phone | +91 7428127908 — call + WhatsApp |
-| Secondary phone | +91 9871439287 — call only |
+| Primary phone | +91 7428127908: call + WhatsApp |
+| Secondary phone | +91 9871439287: call only |
 | Hero contact | Both numbers shown |
 | Enquiry email | Ankushhanry@icloud.com |
 | Hours | Mon–Sat, 10 AM – 7 PM |
 | Office address | Not shown on site |
 | Lead routing (D5) | Form → email; WhatsApp on primary number |
-| Logo (D7) | Text logo — Premium Maid Service |
+| Logo (D7) | Text logo: Premium Maid Service |
 | Brand colours (D7) | Warm coral primary `#E0654D` + off-white background `#F9FAF8` |
 | Hero copy (D7) | "Reliable help for your Home" + existing supporting text |
-| Pricing (D3) | Enquiry only — no rates or fees on site |
+| Pricing (D3) | Enquiry only: no rates or fees on site |
 
-## Still pending — use placeholders, do not invent
+## Still pending: use placeholders, do not invent
 
 - D2: Business model (agency vs direct employer)
 - D6: Domain and hosting
-- D7: **Photos only** — team/office/stock (Section F); logo & colours locked
-- D8: Verification claims — **only if client confirms**
+- D7: **Photos only**: team/office/stock (Section F); logo & colours locked
+- D8: Verification claims: **only if client confirms**
 - D9: Replacement / trial policy
-- D10: Legal pages — **deferred** (no privacy policy in v1 for now)
+- D10: Legal pages: **deferred** (no privacy policy in v1 for now)
 - **Reviews section:** commented out until real testimonials
 
 ## Rules
@@ -40,4 +40,4 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 - Never fabricate testimonials, placement counts, years in business, or verification claims.
 - Do not claim "police verified" until D8 is confirmed.
 - Sticky bar and form WhatsApp use **primary only**; secondary is `tel:` links in footer and hero.
-- Hero Option C in brief still says `[City]` — use **Delhi NCR** where city is needed.
+- Hero Option C in brief still says `[City]`: use **Delhi NCR** where city is needed.

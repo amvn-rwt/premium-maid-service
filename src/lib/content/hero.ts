@@ -10,7 +10,7 @@ export const heroContent = {
   },
   services: ["Maids", "Cooks", "Babysitters", "Japa maids"] as const,
   supporting:
-    "Full-time, part-time or live-in — tell us what you need and we'll find the right fit.",
+    "Full-time, part-time or live-in. Tell us what you need and we'll find the right fit.",
   cta: "Enquire Now",
   ctaHref: sectionAnchors.enquire,
   secondaryCta: "See Services",

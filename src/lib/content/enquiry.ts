@@ -50,7 +50,7 @@ export const enquirySectionContent = {
   privacyNote: "Your details are only used to respond to this enquiry.",
   submitLabel: "Send enquiry",
   whatsappLabel: "Or chat on WhatsApp",
-  successHint: "Thanks — we've received your enquiry and will get back to you soon.",
+  successHint: "Thanks! We've received your enquiry and will get back to you soon.",
   submitErrorHint: "Something went wrong. Please try again or message us on WhatsApp.",
 } as const;
 
@@ -77,7 +77,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       name: "All-rounder",
       tagline: "Daily help across cleaning, kitchen, and errands",
       description:
-        "Ideal when you need one reliable person for everyday household tasks — flexible hours, matched to your routine.",
+        "Ideal when you need one reliable person for everyday household tasks: flexible hours, matched to your routine.",
       image: getServiceImage("all-rounder"),
       highlights: servicesContent.items.find((s) => s.id === "all-rounder")!
         .highlights,
@@ -93,7 +93,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       name: "Cooking maid",
       tagline: "Fresh meals and a well-kept kitchen",
       description:
-        "For families who want daily cooking support — tell us your meal preferences and we'll find someone comfortable in your kitchen.",
+        "For families who want daily cooking support. Tell us your meal preferences and we'll find someone comfortable in your kitchen.",
       image: getServiceImage("cooking"),
       highlights: servicesContent.items.find((s) => s.id === "cooking")!
         .highlights,
@@ -109,7 +109,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       name: "Babycare",
       tagline: "Safe, attentive care at home",
       description:
-        "When you need a caregiver who understands feeding, playtime, and daily routines — matched for your child's age and schedule.",
+        "When you need a caregiver who understands feeding, playtime, and daily routines, matched for your child's age and schedule.",
       image: getServiceImage("babycare"),
       highlights: servicesContent.items.find((s) => s.id === "babycare")!
         .highlights,
@@ -124,7 +124,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       name: "Japa maid",
       tagline: "Specialist care for mother and newborn",
       description:
-        "Post-delivery support for mother and baby — bathing, feeding assistance, rest for the mother, and attentive newborn care at home.",
+        "Post-delivery support for mother and baby: bathing, feeding assistance, rest for the mother, and attentive newborn care at home.",
       image: getServiceImage("japa"),
       highlights: servicesContent.items.find((s) => s.id === "japa")!.highlights,
       details: [
@@ -139,7 +139,7 @@ export const enquiryServicesContent: Record<ServiceId, EnquiryServiceContent> =
       name: "Housemaid",
       tagline: "Deep cleaning and household upkeep",
       description:
-        "For homes that need thorough cleaning, laundry, and organisation — scheduled around your week.",
+        "For homes that need thorough cleaning, laundry, and organisation, scheduled around your week.",
       image: getServiceImage("housemaid"),
       highlights: servicesContent.items.find((s) => s.id === "housemaid")!
         .highlights,

@@ -1,6 +1,6 @@
-# Premium Maid Service — Client Questionnaire
+# Premium Maid Service: Client Questionnaire
 
-> Fill at your own pace. Reply in one go or bit by bit — even partial answers help.
+> Fill at your own pace. Reply in one go or bit by bit: even partial answers help.
 > Last updated: June 19, 2026
 
 ---
@@ -9,9 +9,9 @@
 
 Hi Ankush,
 
-Thanks for confirming Delhi NCR and the two phone numbers — we're using those to start building the website.
+Thanks for confirming Delhi NCR and the two phone numbers: we're using those to start building the website.
 
-I've put together a short questionnaire below. **No rush** — reply whenever you can, even in parts over a few days. Where something isn't decided yet, just write "not sure" and we'll use sensible placeholders for now.
+I've put together a short questionnaire below. **No rush**: reply whenever you can, even in parts over a few days. Where something isn't decided yet, just write "not sure" and we'll use sensible placeholders for now.
 
 We're building **step by step** (header, hero, services, form, etc.) so the site will take shape gradually. I'll share previews as each part is ready.
 
@@ -23,30 +23,30 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 
 ---
 
-## Already confirmed — we're using these now
+## Already confirmed: we're using these now
 
 | # | Item | Your answer |
 |---|------|-------------|
 | ✓ | Service area | Delhi NCR |
 | ✓ | Languages on site | English only |
-| ✓ | **7428127908** (primary) | Call + WhatsApp — primary for sticky bar & form |
+| ✓ | **7428127908** (primary) | Call + WhatsApp: primary for sticky bar & form |
 | ✓ | **9871439287** (secondary) | Call only |
 | ✓ | Hero contact card | Both numbers shown |
 | ✓ | Enquiry email | Ankushhanry@icloud.com |
 | ✓ | Office address | Not shown on site |
 | ✓ | Working hours | Mon–Sat, 10 AM – 7 PM |
-| ✓ | Enquiries to | Ankush — primary WhatsApp number |
+| ✓ | Enquiries to | Ankush: primary WhatsApp number |
 | ✓ | Form submit | Email to Ankushhanry@icloud.com |
-| ✓ | Logo | No image — text logo **Premium Maid Service** (as built) |
+| ✓ | Logo | No image: text logo **Premium Maid Service** (as built) |
 | ✓ | Brand colours | Warm coral primary `#E0654D`, off-white background `#F9FAF8` |
 | ✓ | Hero headline | **"Reliable help for your Home"** + existing supporting copy |
-| ✓ | Pricing on site | **No** — enquiry only ("Contact us for rates") |
+| ✓ | Pricing on site | **No**: enquiry only ("Contact us for rates") |
 
 ---
 
 ## A. Contact & how enquiries reach you
 
-~~**1–9.**~~ — **confirmed** (see table above). Q8 (button text) not specified — using **Enquire Now** for now.
+~~**1–9.**~~: **confirmed** (see table above). Q8 (button text) not specified: using **Enquire Now** for now.
 
 ---
 
@@ -70,7 +70,7 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 
 **13.** Are you a registered agency / company?
 
-- [ ] Yes — registration details to show: `_________________________`
+- [ ] Yes: registration details to show: `_________________________`
 - [ ] No / prefer not to show
 
 **14.** Describe your hiring process in 3–4 short steps (or we'll use a draft):
@@ -90,17 +90,17 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 
 ## C. Pricing & fees
 
-~~**16–18.**~~ — **confirmed** — don't show prices on site; enquiry only (client: "bhai ye rehndo").
+~~**16–18.**~~: **confirmed**: don't show prices on site; enquiry only (client: "bhai ye rehndo").
 
 ---
 
-## D. Policies (only answer if true — we won't claim these without your confirmation)
+## D. Policies (only answer if true: we won't claim these without your confirmation)
 
 **19.** Do all staff undergo **police verification**?
 
 - [ ] Yes
-- [ ] Some roles only — explain: `_________________________`
-- [ ] No — don't mention on site
+- [ ] Some roles only: explain: `_________________________`
+- [ ] No: don't mention on site
 
 **20.** **ID verification** for all staff?
 
@@ -113,12 +113,12 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 
 **22.** **Replacement** if the maid doesn't work out?
 
-- [ ] Yes — for how long / terms: `_________________________`
-- [ ] No / case-by-case — don't promise on site
+- [ ] Yes: for how long / terms: `_________________________`
+- [ ] No / case-by-case: don't promise on site
 
 **23.** **Trial period** before final placement?
 
-- [ ] Yes — how many days: `_________________________`
+- [ ] Yes: how many days: `_________________________`
 - [ ] No
 
 ---
@@ -142,14 +142,14 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 - Minimum child age: `_________________________`
 - [ ] Day shift  [ ] Night / overnight  [ ] Both
-- [ ] Trained nannies — describe: `_________________________`
+- [ ] Trained nannies: describe: `_________________________`
 
 **27. Japa maid**
 
 - Newborn age range you cover: `_________________________`
 - [ ] Baby massage/bath  [ ] Mother care  [ ] Day shift  [ ] Night shift
 
-**28. Housemaid** (vs all-rounder — how do you explain the difference to customers?)
+**28. Housemaid** (vs all-rounder: how do you explain the difference to customers?)
 
 `_________________________`
 
@@ -167,11 +167,11 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 ## F. Trust & marketing
 
-**31.** What makes Premium Maid Service different from other agencies? (One sentence — your words):
+**31.** What makes Premium Maid Service different from other agencies? (One sentence: your words):
 
 `_________________________`
 
-**32.** **Testimonials** — can you share 2–5? For each:
+**32.** **Testimonials**: can you share 2–5? For each:
 
 - First name + area (e.g. "Priya, Gurgaon")
 - Service used
@@ -184,11 +184,11 @@ For each service, tell us what you actually offer. Tick all that apply.
 3. _________________________
 ```
 
-**33.** **Photos** — do you have any we can use?
+**33.** **Photos**: do you have any we can use?
 
 - [ ] Team / office photos
 - [ ] Happy clients (with permission)
-- [ ] None — use professional stock images
+- [ ] None: use professional stock images
 - Send via WhatsApp when ready
 
 **34.** Awards, press, or partner logos to show?
@@ -205,11 +205,11 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 ## G. Brand & design
 
-~~**36–38.**~~ — **confirmed** — use what's already on the site (text logo, current colours, hero copy as written).
+~~**36–38.**~~: **confirmed**: use what's already on the site (text logo, current colours, hero copy as written).
 
 ---
 
-## H. FAQ (short answers — or we'll draft and you approve)
+## H. FAQ (short answers: or we'll draft and you approve)
 
 **39.** How do I book a maid?
 
@@ -219,7 +219,7 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 `_________________________`
 
-**41.** Full-time vs part-time — what's available?
+**41.** Full-time vs part-time: what's available?
 
 `_________________________`
 
@@ -243,7 +243,7 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 `_________________________`
 
-**46.** **Privacy policy** — okay with a standard policy for enquiry forms?
+**46.** **Privacy policy**: okay with a standard policy for enquiry forms?
 
 - [ ] Yes
 - [ ] Need to review wording
@@ -256,13 +256,13 @@ For each service, tell us what you actually offer. Tick all that apply.
 
 ## What we're building now (with placeholders)
 
-While you fill this in, we'll proceed in **small steps** — one component at a time:
+While you fill this in, we'll proceed in **small steps**: one component at a time:
 
 | Step | Component | Using now |
 |------|-----------|-----------|
 | 1 | Project setup (Next.js + Tailwind) | Confirmed stack from brief |
-| 2 | Layout shell — header, footer | Both phone numbers, Delhi NCR |
-| 3 | Hero section | Confirmed copy — "Reliable help for your Home" |
+| 2 | Layout shell: header, footer | Both phone numbers, Delhi NCR |
+| 3 | Hero section | Confirmed copy: "Reliable help for your Home" |
 | 4 | Services cards | Five services from brief |
 | 5 | Sticky Call + WhatsApp bar | Both numbers until primary is chosen |
 | 6 | Enquiry form | Standard fields; WhatsApp fallback until email is confirmed |

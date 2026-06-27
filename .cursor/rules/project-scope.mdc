@@ -1,9 +1,9 @@
 ---
-description: v1 scope boundaries for Premium Maid Service — prevents feature creep
+description: v1 scope boundaries for Premium Maid Service: prevents feature creep
 alwaysApply: true
 ---
 
-# Premium Maid Service — v1 scope
+# Premium Maid Service: v1 scope
 
 This is a **lead-generation marketing site** for a Delhi NCR domestic-help agency. Primary goal: enquiries via form, call, or WhatsApp.
 
@@ -11,11 +11,11 @@ This is a **lead-generation marketing site** for a Delhi NCR domestic-help agenc
 
 - Single-page marketing site (optional `/privacy-policy`, `/services`)
 - English-only copy
-- Booking/enquiry form (no backend required — Formspree/Web3Forms/WhatsApp)
+- Booking/enquiry form (no backend required: Formspree/Web3Forms/WhatsApp)
 - Sticky Call + WhatsApp CTAs on mobile
 - Local SEO (meta tags, LocalBusiness schema)
 
-## Out of scope — do not build unless client explicitly expands scope
+## Out of scope: do not build unless client explicitly expands scope
 
 - User accounts, login, auth
 - Online payments
