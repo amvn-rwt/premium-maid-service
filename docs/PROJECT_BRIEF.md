@@ -172,14 +172,14 @@ Five cards — one per service. Each card:
 
 ### 5.3 How it works (4 steps)
 
-Implemented flow (each step renders a bespoke visual mockup + accent tag chip, with arrow connectors between cards on desktop):
+Implemented flow (equal-height cards; each renders a bespoke visual mockup, a coral benefit chip, and arrow connectors between cards on desktop):
 
-1. **Share your requirement** — Fill form or WhatsApp us · tag “2-min enquiry” (WhatsApp chat mockup)
-2. **We shortlist profiles** — Matched to your service type, timing, and area · tag “Matched to you” (matched-profiles list mockup)
-3. **Interview & trial** — Meet the candidate at your home · tag “Try before hiring” (trial-visit card mockup)
-4. **Hire with support** — We stay available after placement · tag “We stay in touch” (placed + follow-up mockup)
+1. **Share your requirement** — Fill form or WhatsApp us · chip “Quick & easy” (WhatsApp chat mockup)
+2. **We shortlist profiles** — Matched to your service type, timing, and area · chip “Matched to you” (shortlisted-profiles list mockup)
+3. **Interview & trial** — Meet the candidate at your home and try before you commit · chip “Try before hiring” (trial-visit card mockup)
+4. **Hire with support** — Once you confirm, we stay available for follow-up · chip “We stay in touch” (placed + follow-up mockup)
 
-Copy lives in `src/lib/content/how-it-works.ts`; visuals in `src/components/how-it-works/`. No “verified” claim until D8 is confirmed. Adjust steps to match the client’s actual process after discovery.
+Copy/summaries live in `src/lib/content/how-it-works.ts`; visuals in `src/components/how-it-works/`. Mockup profiles are illustrative and role-based (no real names, no specific locality). Accents use brand coral; WhatsApp green is reserved for WhatsApp elements only. No “verified” claim until D8 is confirmed. Adjust steps to match the client’s actual process after discovery.
 
 ### 5.4 Why choose us / trust section
 
