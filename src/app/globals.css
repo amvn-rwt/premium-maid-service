@@ -15,6 +15,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
+  --color-success: var(--success);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -112,6 +113,7 @@
   --accent: color-mix(in oklch, var(--primary) 12%, var(--background));
   --accent-foreground: #1a211f;
   --destructive: #b42318;
+  --success: #15803d;
   --radius: 0.625rem;
 }
 

@@ -107,7 +107,10 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
     setSubmitting(true);
 
     try {
-      await submitEnquiry(values);
+      const formData = new FormData(event.currentTarget);
+      const botcheck = formData.get("botcheck")?.toString() ?? "";
+
+      await submitEnquiry(values, botcheck);
       setSubmitted(true);
       setValues(initialValues(serviceId));
     } catch (error) {
@@ -151,6 +154,20 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
         noValidate
         className="flex flex-col gap-4 px-4 pb-4 sm:px-5 sm:pb-5"
       >
+        <div
+          className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden"
+          aria-hidden="true"
+        >
+          <label htmlFor={`${formId}-botcheck`}>Leave this field empty</label>
+          <input
+            id={`${formId}-botcheck`}
+            name="botcheck"
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
+
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="space-y-2 sm:col-span-2">
             <Label htmlFor={`${formId}-name`}>Full name</Label>
@@ -342,7 +359,10 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
           </p>
 
           {submitted ? (
-            <p className="text-sm text-foreground/90">
+            <p
+              role="status"
+              className="rounded-lg border border-success/30 bg-success/10 px-3 py-2.5 text-sm font-medium text-success"
+            >
               {enquirySectionContent.successHint}
             </p>
           ) : null}

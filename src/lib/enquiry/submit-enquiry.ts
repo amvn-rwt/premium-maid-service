@@ -3,32 +3,10 @@ import { siteConfig } from "@/lib/site";
 
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
-function formatEnquiryBody(values: EnquiryFormValues) {
-  const lines = [
-    `Name: ${values.name}`,
-    `Phone: ${values.phone}`,
-    `Area: ${values.area}`,
-    `Service: ${values.service}`,
-    `Work type: ${values.workType}`,
-  ];
-
-  if (values.mealPreference) {
-    lines.push(`Meal preference: ${values.mealPreference}`);
-  }
-  if (values.childAge) {
-    lines.push(`Child/baby age: ${values.childAge}`);
-  }
-  if (values.expectedDate) {
-    lines.push(`Expected date: ${values.expectedDate}`);
-  }
-  if (values.message) {
-    lines.push(`Message: ${values.message}`);
-  }
-
-  return lines.join("\n");
-}
-
-export async function submitEnquiry(values: EnquiryFormValues) {
+export async function submitEnquiry(
+  values: EnquiryFormValues,
+  botcheck = "",
+) {
   const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
 
   if (!accessKey) {
@@ -52,8 +30,8 @@ export async function submitEnquiry(values: EnquiryFormValues) {
       meal_preference: values.mealPreference || undefined,
       child_age: values.childAge || undefined,
       expected_date: values.expectedDate || undefined,
-      message: formatEnquiryBody(values),
-      botcheck: "",
+      message: values.message?.trim() || "(No message provided)",
+      botcheck,
       replyto: siteConfig.contact.enquiryEmail,
     }),
   });
