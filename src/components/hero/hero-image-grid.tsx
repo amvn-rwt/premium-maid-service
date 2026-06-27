@@ -1,22 +1,21 @@
 import Image from "next/image";
 
-/** Bright, high-key placeholders — swap for real maid/home photos later. */
 const HERO_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=640&h=480&q=80",
-    alt: "Bright modern kitchen",
+    src: "/images/hero/trusted-helper.png",
+    alt: "Professional home helper holding fresh folded towels in a bright bedroom",
   },
   {
-    src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=640&h=480&q=80",
-    alt: "Light-filled living room",
+    src: "/images/hero/kitchen-service.png",
+    alt: "Housekeeper cleaning a kitchen countertop as a happy homeowner looks on",
   },
   {
-    src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=640&h=480&q=80",
-    alt: "Clean white kitchen interior",
+    src: "/images/hero/family-care.png",
+    alt: "Caregiver serving tea to an elderly woman while a child plays nearby",
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=640&h=480&q=80",
-    alt: "Airy home interior",
+    src: "/images/hero/clean-living-room.png",
+    alt: "Spotless, sunlit living room after a professional home cleaning",
   },
 ] as const;
 
