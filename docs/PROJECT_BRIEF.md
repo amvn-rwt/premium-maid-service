@@ -170,16 +170,16 @@ Five cards — one per service. Each card:
 | Japa maid | Newborn care, massage, mother recovery support |
 | Housemaid | Deep cleaning, laundry, organization |
 
-### 5.3 How it works (3–4 steps)
+### 5.3 How it works (4 steps)
 
-Example flow:
+Implemented flow (each step renders a bespoke visual mockup + accent tag chip, with arrow connectors between cards on desktop):
 
-1. **Share your requirement** — Fill form or WhatsApp us  
-2. **We shortlist verified profiles** — Matched to your needs  
-3. **Interview & trial** — Meet the candidate at your home  
-4. **Hire with confidence** — Ongoing support and replacement if needed  
+1. **Share your requirement** — Fill form or WhatsApp us · tag “2-min enquiry” (WhatsApp chat mockup)
+2. **We shortlist profiles** — Matched to your service type, timing, and area · tag “Matched to you” (matched-profiles list mockup)
+3. **Interview & trial** — Meet the candidate at your home · tag “Try before hiring” (trial-visit card mockup)
+4. **Hire with support** — We stay available after placement · tag “We stay in touch” (placed + follow-up mockup)
 
-Adjust steps to match their actual process after discovery.
+Copy lives in `src/lib/content/how-it-works.ts`; visuals in `src/components/how-it-works/`. No “verified” claim until D8 is confirmed. Adjust steps to match the client’s actual process after discovery.
 
 ### 5.4 Why choose us / trust section
 
