@@ -15,7 +15,7 @@
 | **Primary goal** | Convert visitors into enquiries (form submit, call, or WhatsApp) |
 | **Scope (v1)** | Marketing site + booking/enquiry form — no login, payments, or maid database |
 | **Service area** | Delhi NCR (confirmed) |
-| **Languages** | Bilingual — English + Hindi (confirmed) |
+| **Languages** | English only |
 | **Contact numbers** | +91 74281 27908, +91 98714 39287 (confirmed) |
 
 ### Services to feature
@@ -37,7 +37,7 @@ These must be confirmed on the discovery call before build starts.
 | D1 | **Service area** | Single city, metro region (e.g. Delhi NCR), or pan-India | ✅ **Delhi NCR** |
 | D2 | **Business model** | Placement agency vs. direct employer vs. aggregator | ⬜ Pending |
 | D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ✅ **Enquiry only** — no prices on site |
-| D4 | **Languages** | Hindi only, English only, or bilingual (Hindi + English) | ✅ **Bilingual (English + Hindi)** |
+| D4 | **Languages** | English only (Hindi/bilingual removed from v1 scope) | ✅ **English only** |
 | D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (Ankushhanry@icloud.com) + WhatsApp on primary number |
 | D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ⬜ Pending |
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial** — text logo, current palette, hero copy locked; photos TBD (Section F) |
@@ -91,7 +91,7 @@ These must be confirmed on the discovery call before build starts.
 
 27. Do you have a **logo** and **brand colors**? ✅ Logo locked (text); colours locked — warm coral `#E0654D` on off-white.
 28. Social media links? (Instagram, Facebook — often important for local trust.)
-29. Need **Hindi** content, **English**, or both?
+29. ~~Need **Hindi** content, **English**, or both?~~ — **English only** for v1.
 30. Timeline: when do they need the site live?
 31. Who will **update content** after launch? (They may need a simple CMS later — out of scope for v1.)
 
@@ -295,7 +295,6 @@ Avoid dark themes — they conflict with “clean home services” perception.
 
 - **Headings:** Plus Jakarta Sans (bold)  
 - **Body:** Readable sans-serif, 16–18px on mobile  
-- **Hindi (if needed):** Noto Sans Devanagari or system fallback  
 
 ### Imagery
 
@@ -324,7 +323,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 | Hosting | Vercel or Netlify | Free tier, custom domain |
 | Analytics | Google Analytics or Plausible | Track enquiries and traffic |
 | SEO | Meta tags, Open Graph, local business schema | Local search visibility |
-| Language | Bilingual EN + HI (i18n) | Confirmed by client — plan for Hindi copy + Noto Sans Devanagari |
+| Language | English only | No i18n or Hindi toggle in v1 |
 
 ### Out of scope for v1
 
@@ -423,7 +422,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 
 | Item | Answer |
 |------|--------|
-| **Languages** | Both — English and Hindi |
+| **Languages** | English only (bilingual plan removed) |
 | **Service area** | Delhi NCR |
 | **Phone 1** | 7428127908 |
 | **Phone 2** | 9871439287 |
@@ -466,4 +465,5 @@ Still to confirm: main button wording (Q8 — using "Enquire Now"); photos (Sect
 | Date | Change |
 |------|--------|
 | 2026-06-19 | Initial project brief created |
-| 2026-06-19 | Client confirmed Delhi NCR, bilingual EN/HI, two phone numbers |
+| 2026-06-19 | Client confirmed Delhi NCR, two phone numbers |
+| 2026-06-27 | Languages set to English only — Hindi/bilingual removed from v1 |

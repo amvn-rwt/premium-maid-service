@@ -19,7 +19,7 @@ Read `docs/PROJECT_BRIEF.md` before significant work. It is the source of truth.
 | Business | Premium Maid Service |
 | Goal | Lead generation — form, call, WhatsApp |
 | Area | Delhi NCR |
-| Languages | English + Hindi (bilingual) |
+| Languages | English only |
 | Phones | +91 7428127908, +91 98714 39287 |
 | Services | All-rounder, Cooking, Babycare, Japa, Housemaid |
 
@@ -50,7 +50,6 @@ Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 
 - Light theme only — no dark mode
 - Headings: Plus Jakarta Sans
-- Hindi: Noto Sans Devanagari
 - Mobile-first, large tap targets, minimal JS
 
 ## Tech stack

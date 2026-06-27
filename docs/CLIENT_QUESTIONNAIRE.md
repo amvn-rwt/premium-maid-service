@@ -9,7 +9,7 @@
 
 Hi Ankush,
 
-Thanks for confirming Delhi NCR, English + Hindi, and the two phone numbers — we're using those to start building the website.
+Thanks for confirming Delhi NCR and the two phone numbers — we're using those to start building the website.
 
 I've put together a short questionnaire below. **No rush** — reply whenever you can, even in parts over a few days. Where something isn't decided yet, just write "not sure" and we'll use sensible placeholders for now.
 
@@ -28,7 +28,7 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 | # | Item | Your answer |
 |---|------|-------------|
 | ✓ | Service area | Delhi NCR |
-| ✓ | Languages on site | English + Hindi |
+| ✓ | Languages on site | English only |
 | ✓ | **7428127908** (primary) | Call + WhatsApp — primary for sticky bar & form |
 | ✓ | **9871439287** (secondary) | Call only |
 | ✓ | Hero contact card | Both numbers shown |
@@ -267,8 +267,7 @@ While you fill this in, we'll proceed in **small steps** — one component at a 
 | 5 | Sticky Call + WhatsApp bar | Both numbers until primary is chosen |
 | 6 | Enquiry form | Standard fields; WhatsApp fallback until email is confirmed |
 | 7 | How it works, FAQ, testimonials | Placeholder / draft until your answers |
-| 8 | Hindi toggle + translations | Structure first, copy as you confirm |
-| 9 | SEO + privacy page | Delhi NCR, bilingual meta |
+| 8 | SEO | Delhi NCR meta, English copy |
 
 We will **not** put on the site until you confirm: police verification, placement counts, years in business, star ratings, or fake testimonials.
 

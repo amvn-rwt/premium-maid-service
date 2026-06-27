@@ -8,10 +8,7 @@ export const siteConfig = {
   description:
     "Maids, cooks, babysitters, and Japa maids in Delhi NCR. Enquire by form, call, or WhatsApp.",
   serviceArea: "Delhi NCR",
-  locale: {
-    default: "en" as const,
-    supported: ["en", "hi"] as const,
-  },
+  language: "en" as const,
   phones: [
     {
       label: "Primary",
@@ -44,8 +41,6 @@ export const siteConfig = {
     cta: "Contact us for rates",
   },
 } as const;
-
-export type Locale = (typeof siteConfig.locale.supported)[number];
 
 export function getPrimaryPhone() {
   return siteConfig.phones[siteConfig.primaryPhoneIndex];

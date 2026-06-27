@@ -2,8 +2,8 @@
 name: content-and-copy
 description: >-
   Copy and content guidelines for Premium Maid Service website. Use when writing
-  headlines, service descriptions, FAQ, testimonials, Hindi translations, or
-  marketing text for the Delhi NCR domestic-help agency site.
+  headlines, service descriptions, FAQ, testimonials, or marketing text for the
+  Delhi NCR domestic-help agency site.
 ---
 
 # Content & Copy
@@ -12,26 +12,23 @@ description: >-
 
 - **Premium** = professional, calm, trustworthy — not luxury or flashy
 - Warm and respectful toward domestic workers and families
-- Clear, simple language — many visitors browse on mobile in Hindi or English
+- Clear, simple English — many visitors browse on mobile
 - Local: reference Delhi NCR naturally where relevant
 
-## Bilingual (EN + HI)
+## Language
 
-- Client confirmed both languages
-- Provide English and Hindi for all user-facing strings (headlines, CTAs, form labels, FAQ)
-- Hindi font: Noto Sans Devanagari (pair with DM Sans or Plus Jakarta Sans for English)
-- Prefer a language toggle (EN | हिंदी) over mixed inline text in one sentence
-- Use natural Hindi — avoid machine-translated formalities; "घरेलू सहायता" over awkward literalisms where common terms exist (e.g. "Japa maid" may stay as जापा मेड if that's what locals say)
+- **English only** for v1 — no Hindi toggle or i18n
+- Use plain, conversational English suitable for Delhi NCR households
 
 ## Services — definitions
 
-| Service | EN focus | HI label hint |
-|---------|----------|---------------|
-| All-rounder | Cleaning, utensils, basic errands; full/part-time | ऑल राउंडर / घरेलू सहायक |
-| Cooking maid | Daily meals, kitchen hygiene | रसोइया / कुकिंग मेड |
-| Babycare | Safe child care, feeding, playtime | बेबीसिटर / बच्चों की देखभाल |
-| Japa maid | Newborn + mother post-delivery care | जापा मेड |
-| Housemaid | Deep cleaning, laundry, organization | हाउसमेड / सफाई |
+| Service | EN focus |
+|---------|----------|
+| All-rounder | Cleaning, utensils, basic errands; full/part-time |
+| Cooking maid | Daily meals, kitchen hygiene |
+| Babycare | Safe child care, feeding, playtime |
+| Japa maid | Newborn + mother post-delivery care |
+| Housemaid | Deep cleaning, laundry, organization |
 
 ## Hero drafts (starting points)
 

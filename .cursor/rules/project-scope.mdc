@@ -10,7 +10,7 @@ This is a **lead-generation marketing site** for a Delhi NCR domestic-help agenc
 ## In scope (v1)
 
 - Single-page marketing site (optional `/privacy-policy`, `/services`)
-- Bilingual English + Hindi
+- English-only copy
 - Booking/enquiry form (no backend required — Formspree/Web3Forms/WhatsApp)
 - Sticky Call + WhatsApp CTAs on mobile
 - Local SEO (meta tags, LocalBusiness schema)
