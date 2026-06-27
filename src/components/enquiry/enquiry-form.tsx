@@ -333,22 +333,27 @@ export function EnquiryForm({ serviceId, onServiceChange }: EnquiryFormProps) {
         </div>
 
         <div className="space-y-3 pt-1">
-          <div className="flex flex-wrap items-center gap-3">
-            <PillCtaButton type="submit" className="shrink-0" disabled={submitting}>
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <PillCtaButton
+              type="submit"
+              size="sm"
+              className="shrink-0 sm:h-12 sm:pl-6 sm:pr-1.5 sm:text-base [&_span:last-child]:sm:size-9 [&_svg]:sm:size-4"
+              disabled={submitting}
+            >
               {submitting ? "Sending…" : enquirySectionContent.submitLabel}
             </PillCtaButton>
 
             <Button
               asChild
               variant="outline"
-              className="h-12 shrink-0 rounded-full border-border px-5"
+              className="h-9 shrink-0 rounded-full border-border px-4 text-sm sm:h-12 sm:px-5"
             >
               <a
                 href={whatsappHref(getPrimaryPhone().whatsapp)}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <WhatsAppIcon className="size-4" />
+                <WhatsAppIcon className="size-3.5 sm:size-4" />
                 {enquirySectionContent.whatsappLabel}
               </a>
             </Button>
