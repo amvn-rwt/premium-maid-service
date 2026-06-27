@@ -74,7 +74,7 @@ export function ServiceDetailModal({
           </DialogClose>
 
           <div className="relative w-full shrink-0 overflow-hidden lg:w-[44%]">
-            <div className="relative aspect-16/10 w-full sm:aspect-3/2 lg:h-full lg:aspect-auto">
+            <div className="relative aspect-4/3 w-full sm:aspect-3/2 lg:h-full lg:aspect-auto">
               <Image
                 src={content.image.src}
                 alt={content.image.alt}
@@ -191,22 +191,22 @@ export function ServiceDetailModal({
             </div>
 
             <div className="shrink-0 border-t border-border/60 bg-background/80 p-4 backdrop-blur-sm sm:p-5">
-              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-2.5">
+              <div className="flex flex-row items-center gap-2 sm:gap-2.5">
                 <button
                   type="button"
                   onClick={handleEnquire}
                   aria-label={serviceDetailModalContent.ctaAriaLabel(content.name)}
-                  className="group inline-flex h-12 min-w-0 cursor-pointer items-center justify-between gap-3 rounded-full bg-foreground pr-1.5 pl-6 text-sm font-medium whitespace-nowrap text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:flex-1 sm:text-base"
+                  className="group inline-flex h-11 min-w-0 flex-1 cursor-pointer items-center justify-between gap-2 rounded-full bg-foreground pr-1 pl-4 text-sm font-medium whitespace-nowrap text-background transition-colors hover:bg-foreground/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:h-12 sm:gap-3 sm:pr-1.5 sm:pl-6 sm:text-base"
                 >
                   <span className="truncate">
                     {serviceDetailModalContent.ctaLabel}
                   </span>
                   <span
                     aria-hidden
-                    className="flex size-9 shrink-0 items-center justify-center rounded-full bg-primary transition-transform duration-300 ease-out group-hover:scale-[1.04]"
+                    className="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary transition-transform duration-300 ease-out group-hover:scale-[1.04] sm:size-9"
                   >
                     <ArrowUpRight
-                      className="size-4 text-primary-foreground transition-transform duration-300 ease-enter group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                      className="size-3.5 text-primary-foreground transition-transform duration-300 ease-enter group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:size-4"
                       strokeWidth={2.25}
                     />
                   </span>
@@ -216,10 +216,13 @@ export function ServiceDetailModal({
                   href={getPrimaryWhatsAppHref()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-12 shrink-0 items-center justify-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-5 text-sm font-semibold text-primary transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:px-6"
+                  aria-label={serviceDetailModalContent.whatsappLabel}
+                  className="inline-flex size-11 shrink-0 items-center justify-center gap-2 rounded-full border border-primary/25 bg-primary/10 text-sm font-semibold text-primary transition-colors hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 sm:size-auto sm:h-12 sm:px-6"
                 >
                   <WhatsAppIcon className="size-4 shrink-0" />
-                  {serviceDetailModalContent.whatsappLabel}
+                  <span className="hidden sm:inline">
+                    {serviceDetailModalContent.whatsappLabel}
+                  </span>
                 </a>
               </div>
             </div>
