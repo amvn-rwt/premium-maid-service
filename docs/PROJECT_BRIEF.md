@@ -183,16 +183,16 @@ Copy/summaries live in `src/lib/content/how-it-works.ts`; visuals in `src/compon
 
 ### 5.4 Why choose us / trust section
 
-Possible points (only include verified claims):
+Implemented as a bento grid: a 2×2 set of circular-icon cards (left two columns on desktop) plus one tall dark featured information card (coral glow accent, no CTA button) in the third column. Icon-based by design — no client photos used here, so nothing depends on pending D7 assets.
 
-- Background-verified staff  
-- X+ years of experience  
-- Fast response within [Y] hours  
-- Replacement guarantee  
-- Transparent process  
-- Serving [City/Region]  
+Current points (only confirmed, non-claim statements):
 
-Optional: stats row — `500+ Placements` · `12+ Years` · `4.8★ Rating` (real numbers only).
+- **Delhi NCR focused** (MapPin) — placements across the region
+- **Flexible arrangements** (CalendarClock) — full-time, part-time, live-in, 24-hour
+- **All key services** (Users) — maids, cooks, babysitters, Japa maids, house help
+- **Easy to reach** (MessagesSquare) — form, call, or WhatsApp
+
+Featured card copy + the points live in `src/lib/content/why-us.ts`; layout in `src/components/why-us/why-us-section.tsx`. Do **not** add “background-verified”, years-in-business, response-time, replacement-guarantee, or stats (`500+ Placements`, ratings) until those are confirmed (see D8/D9).
 
 ### 5.5 Testimonials
 
