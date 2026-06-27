@@ -25,7 +25,7 @@ export function HeroImageGrid() {
       {HERO_IMAGES.map((image) => (
         <div
           key={image.src}
-          className="relative min-h-0 overflow-hidden rounded-lg bg-background/10 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-safe:hover:scale-105"
+          className="relative min-h-0 overflow-hidden rounded-lg bg-background/10 transition-transform duration-500 ease-enter motion-safe:hover:scale-105"
         >
           <Image
             src={image.src}
