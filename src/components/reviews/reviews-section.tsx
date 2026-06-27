@@ -1,3 +1,7 @@
+// Reviews section — commented out until real testimonials are available.
+// Uncomment this file and restore imports in page.tsx, nav.ts, footer.ts, reviews.ts.
+
+/*
 import Link from "next/link";
 
 import { sectionAnchors } from "@/lib/content/nav";
@@ -47,3 +51,4 @@ export function ReviewsSection() {
     </section>
   );
 }
+*/

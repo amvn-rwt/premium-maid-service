@@ -43,7 +43,7 @@ These must be confirmed on the discovery call before build starts.
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial** — text logo, current palette, hero copy locked; photos TBD (Section F) |
 | D8 | **Verification claims** | Police check, ID verification, training — only if actually offered | ⬜ Pending |
 | D9 | **Replacement / trial policy** | Guarantee period, trial days, refund terms | ⬜ Pending |
-| D10 | **Legal pages** | Privacy policy, terms of service — required if collecting personal data | ⬜ Pending |
+| D10 | **Legal pages** | Privacy policy, terms of service | ⬜ **Deferred** — not in v1 for now |
 
 ---
 
@@ -116,9 +116,11 @@ Keep it small — 1 main landing page with anchored sections, plus optional dedi
 ### Navigation
 
 ```
-Logo | Home | Services | How It Works | Why Us | Reviews | Book Now
+Logo | Home | Services | How It Works | Why Us | Book Now
                                                       [Call] [WhatsApp]
 ```
+
+> **Reviews** section is built but **commented out** until real testimonials are confirmed. Uncomment `reviews-section.tsx`, `reviews.ts`, and nav/footer links when ready.
 
 On mobile: hamburger menu + **sticky bottom bar** with Call and WhatsApp.
 
@@ -197,8 +199,10 @@ Icon/text-based by design — no client photos, so nothing depends on pending D7
 
 ### 5.5 Testimonials
 
-2–4 cards: quote, client first name + area, service type.  
-Video testimonials are a plus but not required for v1.
+**Disabled for v1** — section code is commented out; no placeholder reviews on the live site. Re-enable when client provides 2–4 real quotes.
+
+2–4 cards when live: quote, client first name + area, service type.  
+Video testimonials are a plus but not required.
 
 ### 5.6 Service areas
 
@@ -370,7 +374,7 @@ Avoid dark themes — they conflict with “clean home services” perception.
 - [ ] Site built and reviewed on mobile + desktop  
 - [ ] Form tested — submission reaches client  
 - [ ] Call and WhatsApp links tested on real devices  
-- [ ] Privacy policy added if collecting personal data  
+- [ ] Privacy policy — **deferred** (not required for current launch)  
 - [ ] Domain connected  
 - [ ] Basic analytics installed  
 - [ ] Client handoff: how to request text/image updates  

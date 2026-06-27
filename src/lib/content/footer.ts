@@ -33,7 +33,7 @@ export const footerNavLinks = [
   { label: "Services", href: sectionAnchors.services },
   { label: "How It Works", href: sectionAnchors.howItWorks },
   { label: "Why Us", href: sectionAnchors.whyUs },
-  { label: "Reviews", href: sectionAnchors.reviews },
+  // { label: "Reviews", href: sectionAnchors.reviews },
   { label: "Enquire", href: sectionAnchors.enquire },
 ] as const;
 

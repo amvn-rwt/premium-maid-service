@@ -3,7 +3,7 @@ export const sectionAnchors = {
   services: "#services",
   howItWorks: "#how-it-works",
   whyUs: "#why-us",
-  reviews: "#reviews",
+  // reviews: "#reviews", // uncomment when testimonials section is live
   enquire: "#enquire",
 } as const;
 
@@ -12,5 +12,5 @@ export const navLinks = [
   { label: "Services", href: sectionAnchors.services },
   { label: "How It Works", href: sectionAnchors.howItWorks },
   { label: "Why Us", href: sectionAnchors.whyUs },
-  { label: "Reviews", href: sectionAnchors.reviews },
+  // { label: "Reviews", href: sectionAnchors.reviews },
 ] as const;

@@ -32,7 +32,8 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 - D7: **Photos only** — team/office/stock (Section F); logo & colours locked
 - D8: Verification claims — **only if client confirms**
 - D9: Replacement / trial policy
-- D10: Legal pages wording
+- D10: Legal pages — **deferred** (no privacy policy in v1 for now)
+- **Reviews section:** commented out until real testimonials
 
 ## Rules
 

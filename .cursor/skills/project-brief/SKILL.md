@@ -27,9 +27,11 @@ Read `docs/PROJECT_BRIEF.md` before significant work. It is the source of truth.
 
 Single-page site with anchored sections recommended:
 
-`Hero → Services → How It Works → Why Us → Reviews → Service Areas → FAQ → Enquiry Form → Footer`
+`Hero → Services → How It Works → Why Us → Enquiry Form → Footer`
 
-Nav: `Home | Services | How It Works | Why Us | Reviews | Book Now` + Call/WhatsApp.
+Nav: `Home | Services | How It Works | Why Us | Book Now` + Call/WhatsApp.
+
+Reviews section exists in code but is **commented out** until real testimonials arrive.
 
 Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 
