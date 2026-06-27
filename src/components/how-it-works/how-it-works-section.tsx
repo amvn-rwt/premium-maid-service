@@ -78,8 +78,8 @@ export function HowItWorksSection() {
           })}
         </ol>
 
-        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-muted-foreground">{ctaNote}</p>
+        <div className="mt-10 flex flex-row items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground text-pretty">{ctaNote}</p>
           <PillCtaButton href={sectionAnchors.enquire} size="sm">
             {ctaLabel}
           </PillCtaButton>
