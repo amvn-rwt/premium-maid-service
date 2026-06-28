@@ -39,7 +39,7 @@ These must be confirmed on the discovery call before build starts.
 | D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ✅ **Enquiry only**: no prices on site |
 | D4 | **Languages** | English only (Hindi/bilingual removed from v1 scope) | ✅ **English only** |
 | D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (Ankushhanry@icloud.com) + WhatsApp on primary number |
-| D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ✅ **https://premiiummaidservice.in** (live) |
+| D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ✅ **https://premiummaidservice.in** (live) |
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial**: text logo, current palette, hero copy locked; photos TBD (Section F) |
 | D8 | **Verification claims** | Police check, ID verification, training: only if actually offered | ⬜ Pending |
 | D9 | **Replacement / trial policy** | Guarantee period, trial days, refund terms | ⬜ Pending |
@@ -361,7 +361,7 @@ Avoid dark themes: they conflict with “clean home services” perception.
 
 | Item | Value / location |
 |------|------------------|
-| Canonical domain | `https://premiiummaidservice.in` — `src/lib/site.ts` |
+| Canonical domain | `https://premiummaidservice.in` — `src/lib/site.ts` |
 | Title | `Premium Maid Service \| Maids, Cooks & Japa Maids in Delhi NCR` |
 | Meta description | Services + Delhi NCR + CTA — `src/lib/seo/metadata.ts` |
 | Open Graph / Twitter | `src/lib/seo/metadata.ts` |
@@ -398,7 +398,7 @@ Avoid dark themes: they conflict with “clean home services” perception.
 - [ ] Form tested: submission reaches client  
 - [ ] Call and WhatsApp links tested on real devices  
 - [ ] Privacy policy: **deferred** (not required for current launch)  
-- [x] Domain connected — **https://premiiummaidservice.in**  
+- [x] Domain connected — **https://premiummaidservice.in**  
 - [x] SEO basics — metadata, JSON-LD, sitemap, robots  
 - [ ] Basic analytics installed  
 - [ ] Client handoff: how to request text/image updates  

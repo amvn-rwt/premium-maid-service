@@ -24,7 +24,7 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 | Brand colours (D7) | Warm coral primary `#E0654D` + off-white background `#F9FAF8` |
 | Hero copy (D7) | "Reliable help for your Home" + existing supporting text |
 | Pricing (D3) | Enquiry only: no rates or fees on site |
-| Domain (D6) | https://premiiummaidservice.in |
+| Domain (D6) | https://premiummaidservice.in |
 | SEO | Metadata, OG/Twitter, JSON-LD, sitemap, robots — see `src/lib/seo/` |
 
 ## Still pending: use placeholders, do not invent

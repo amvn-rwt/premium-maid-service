@@ -21,7 +21,7 @@ Read `docs/PROJECT_BRIEF.md` before significant work. It is the source of truth.
 | Area | Delhi NCR |
 | Languages | English only |
 | Phones | +91 7428127908, +91 98714 39287 |
-| Domain | https://premiiummaidservice.in |
+| Domain | https://premiummaidservice.in |
 | Services | All-rounder, Cooking, Babycare, Japa, Housemaid |
 
 ## Site structure (v1)
