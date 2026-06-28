@@ -33,7 +33,7 @@ export const siteConfig = {
   ],
   primaryPhoneIndex: 0,
   contact: {
-    enquiryEmail: "ankushhanry@icloud.com",
+    enquiryEmail: "hello@premiummaidservice.in",
     showOfficeAddress: false,
     hours: {
       summary: "Mon–Sat, 10 AM – 7 PM",

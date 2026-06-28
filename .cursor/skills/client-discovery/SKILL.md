@@ -27,7 +27,7 @@ description: >-
 | D5 Lead routing | Email + WhatsApp on primary |
 | Primary phone | 7428127908: call + WhatsApp |
 | Secondary phone | 9871439287: call only |
-| Enquiry email | Ankushhanry@icloud.com |
+| Enquiry email | hello@premiummaidservice.in |
 | Hours | Mon–Sat, 10 AM – 7 PM |
 | Office address | Not on site |
 | D7 Logo | Text logo: Premium Maid Service |

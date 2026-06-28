@@ -38,7 +38,7 @@ These must be confirmed on the discovery call before build starts.
 | D2 | **Business model** | Placement agency vs. direct employer vs. aggregator | ⬜ Pending |
 | D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ✅ **Enquiry only**: no prices on site |
 | D4 | **Languages** | English only (Hindi/bilingual removed from v1 scope) | ✅ **English only** |
-| D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (Ankushhanry@icloud.com) + WhatsApp on primary number |
+| D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (hello@premiummaidservice.in) + WhatsApp on primary number |
 | D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ✅ **https://premiummaidservice.in** (live) |
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial**: text logo, current palette, hero copy locked; photos TBD (Section F) |
 | D8 | **Verification claims** | Police check, ID verification, training: only if actually offered | ⬜ Pending |
@@ -455,7 +455,7 @@ Avoid dark themes: they conflict with “clean home services” perception.
 | **Primary (7428127908)** | Call + WhatsApp: sticky bar, navbar, enquiry form |
 | **Secondary (9871439287)** | Call only: listed in footer and hero contact card |
 | **Hero** | Both numbers shown |
-| **Enquiry email** | Ankushhanry@icloud.com |
+| **Enquiry email** | hello@premiummaidservice.in |
 | **Hours** | Mon–Sat, 10 AM – 7 PM |
 | **Office address** | Not on site |
 | **Form routing** | Email on submit; WhatsApp as secondary CTA |
@@ -478,7 +478,7 @@ Still to confirm: main button wording (Q8: using "Enquire Now"); photos (Section
 
 | Item | Answer |
 |------|--------|
-| Form email | Ankushhanry@icloud.com |
+| Form email | hello@premiummaidservice.in |
 | Hours | 10 AM – 7 PM, Monday–Saturday |
 | Office address | No |
 | Enquiries | Same primary WhatsApp number |

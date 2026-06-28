@@ -32,11 +32,11 @@ Reply with the question number and your answer, e.g. `3. Email: …` or `7a. Yes
 | ✓ | **7428127908** (primary) | Call + WhatsApp: primary for sticky bar & form |
 | ✓ | **9871439287** (secondary) | Call only |
 | ✓ | Hero contact card | Both numbers shown |
-| ✓ | Enquiry email | Ankushhanry@icloud.com |
+| ✓ | Enquiry email | hello@premiummaidservice.in |
 | ✓ | Office address | Not shown on site |
 | ✓ | Working hours | Mon–Sat, 10 AM – 7 PM |
 | ✓ | Enquiries to | Ankush: primary WhatsApp number |
-| ✓ | Form submit | Email to Ankushhanry@icloud.com |
+| ✓ | Form submit | Email to hello@premiummaidservice.in |
 | ✓ | Logo | No image: text logo **Premium Maid Service** (as built) |
 | ✓ | Brand colours | Warm coral primary `#E0654D`, off-white background `#F9FAF8` |
 | ✓ | Hero headline | **"Reliable help for your Home"** + existing supporting copy |
