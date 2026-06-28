@@ -24,11 +24,12 @@ Read `docs/PROJECT_BRIEF.md` Section 2 before hardcoding business details.
 | Brand colours (D7) | Warm coral primary `#E0654D` + off-white background `#F9FAF8` |
 | Hero copy (D7) | "Reliable help for your Home" + existing supporting text |
 | Pricing (D3) | Enquiry only: no rates or fees on site |
+| Domain (D6) | https://premiiummaidservice.in |
+| SEO | Metadata, OG/Twitter, JSON-LD, sitemap, robots — see `src/lib/seo/` |
 
 ## Still pending: use placeholders, do not invent
 
 - D2: Business model (agency vs direct employer)
-- D6: Domain and hosting
 - D7: **Photos only**: team/office/stock (Section F); logo & colours locked
 - D8: Verification claims: **only if client confirms**
 - D9: Replacement / trial policy

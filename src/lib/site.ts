@@ -5,10 +5,17 @@
 export const siteConfig = {
   name: "Premium Maid Service",
   logoText: "PremiumMaidService",
+  url: "https://premiiummaidservice.in",
   description:
     "Maids, cooks, babysitters, and Japa maids in Delhi NCR. Enquire by form, call, or WhatsApp.",
   serviceArea: "Delhi NCR",
   language: "en" as const,
+  seo: {
+    title: "Premium Maid Service | Maids, Cooks & Japa Maids in Delhi NCR",
+    description:
+      "Book maids, cooking maids, babysitters, Japa maids and housemaids in Delhi NCR. Enquire by form, call or WhatsApp.",
+    ogImage: "/images/hero/family-care.png",
+  },
   phones: [
     {
       label: "Primary",

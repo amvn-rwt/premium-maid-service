@@ -21,6 +21,7 @@ Read `docs/PROJECT_BRIEF.md` before significant work. It is the source of truth.
 | Area | Delhi NCR |
 | Languages | English only |
 | Phones | +91 7428127908, +91 98714 39287 |
+| Domain | https://premiiummaidservice.in |
 | Services | All-rounder, Cooking, Babycare, Japa, Housemaid |
 
 ## Site structure (v1)
@@ -57,7 +58,7 @@ Mobile: hamburger + **sticky bottom bar** (Call + WhatsApp).
 - Next.js or Astro + Tailwind CSS
 - Forms: Formspree / Web3Forms (no custom backend v1)
 - Deploy: Vercel or Netlify
-- SEO: meta tags, Open Graph, LocalBusiness JSON-LD
+- SEO: `src/lib/seo/metadata.ts`, `src/lib/seo/json-ld.ts`, `src/app/sitemap.ts`, `src/app/robots.ts`
 
 ## Reference sites (patterns only: do not copy)
 

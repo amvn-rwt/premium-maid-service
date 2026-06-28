@@ -39,7 +39,7 @@ These must be confirmed on the discovery call before build starts.
 | D3 | **Pricing on website** | Show rates / salary ranges / agency fee, or enquiry-only | ✅ **Enquiry only**: no prices on site |
 | D4 | **Languages** | English only (Hindi/bilingual removed from v1 scope) | ✅ **English only** |
 | D5 | **Lead routing** | Email, WhatsApp, SMS, Google Sheet, CRM | ✅ **Email** (Ankushhanry@icloud.com) + WhatsApp on primary number |
-| D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ⬜ Pending |
+| D6 | **Domain & hosting** | Client-owned domain; Vercel/Netlify (recommended) | ✅ **https://premiiummaidservice.in** (live) |
 | D7 | **Brand assets** | Logo, brand colors, photos (team/office/stock) | ✅ **Partial**: text logo, current palette, hero copy locked; photos TBD (Section F) |
 | D8 | **Verification claims** | Police check, ID verification, training: only if actually offered | ⬜ Pending |
 | D9 | **Replacement / trial policy** | Guarantee period, trial days, refund terms | ⬜ Pending |
@@ -355,13 +355,37 @@ Avoid dark themes: they conflict with “clean home services” perception.
 
 ---
 
-## 9. SEO & local discovery (basics)
+## 9. SEO & local discovery
 
-- **Title:** `Premium Maid Service | Maids, Cooks, Babysitters & Japa Maids in Delhi NCR`  
-- **Meta description:** 150–160 chars with services + city + CTA  
-- **H1:** One per page; include primary keyword naturally  
-- **LocalBusiness schema** (JSON-LD): name, phone, area served, hours  
-- **Google Business Profile:** Client should create/claim separately: website links to it  
+**Implemented (v1):**
+
+| Item | Value / location |
+|------|------------------|
+| Canonical domain | `https://premiiummaidservice.in` — `src/lib/site.ts` |
+| Title | `Premium Maid Service \| Maids, Cooks & Japa Maids in Delhi NCR` |
+| Meta description | Services + Delhi NCR + CTA — `src/lib/seo/metadata.ts` |
+| Open Graph / Twitter | `src/lib/seo/metadata.ts` |
+| JSON-LD | `LocalBusiness`, `WebSite`, `Service` × 5 — `src/lib/seo/json-ld.ts` |
+| Sitemap | `src/app/sitemap.ts` → `/sitemap.xml` |
+| Robots | `src/app/robots.ts` → `/robots.txt` |
+
+**On-page (already in place):**
+
+- Single H1 in hero (`src/components/hero/hero-copy.tsx`)
+- Section H2s for services, how it works, why us, enquiry
+- Descriptive image alt text on hero and service images
+
+**Not in schema/metadata (by design):**
+
+- Star ratings, review count, testimonials
+- Police verification, replacement guarantee, years in business
+- Office address (not shown on site)
+
+**Post-launch (client / manual):**
+
+- Google Business Profile: create/claim and link to website
+- Submit sitemap in Google Search Console
+- Validate JSON-LD with [Rich Results Test](https://search.google.com/test/rich-results) after deploy
 
 ---
 
@@ -374,7 +398,8 @@ Avoid dark themes: they conflict with “clean home services” perception.
 - [ ] Form tested: submission reaches client  
 - [ ] Call and WhatsApp links tested on real devices  
 - [ ] Privacy policy: **deferred** (not required for current launch)  
-- [ ] Domain connected  
+- [x] Domain connected — **https://premiiummaidservice.in**  
+- [x] SEO basics — metadata, JSON-LD, sitemap, robots  
 - [ ] Basic analytics installed  
 - [ ] Client handoff: how to request text/image updates  
 
@@ -467,3 +492,4 @@ Still to confirm: main button wording (Q8: using "Enquire Now"); photos (Section
 | 2026-06-19 | Initial project brief created |
 | 2026-06-19 | Client confirmed Delhi NCR, two phone numbers |
 | 2026-06-27 | Languages set to English only: Hindi/bilingual removed from v1 |
+| 2026-06-28 | SEO launch: canonical domain, metadata, JSON-LD, sitemap, robots |
